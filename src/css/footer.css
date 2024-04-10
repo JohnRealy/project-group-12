@@ -1,0 +1,67 @@
+.container_footer {
+    width: 375px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.title_footer {
+    font-size: 40px;
+    display: flex;
+    gap: 4px;
+}
+
+.title_work {
+    color: red;
+}
+.form_footer {
+    display:flex;
+     flex-direction: column;
+     row-gap: 20px;
+        padding-top: 62px;
+       padding-bottom: 62px;
+}
+.input_footer,
+.feadback_footer {
+color: white;
+ height: 44px;
+ width: 100%;
+background-color: transparent;
+border: none;
+border-bottom: 1px solid #FAFAFA33;
+
+
+}
+
+.btn_footer {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: none;
+    background-color: red;
+    margin-top: 12px;
+    font-size: 16px;
+}
+
+.adress_footer {
+    display: flex;
+    gap: 10px;
+    height: 37px;
+    /* background-color: transparent;
+    border-color: gray;
+    border: 1px;
+    border-radius:8px ; */
+}
+.link_footer {
+     height: 37px;
+
+padding: 10px 12px 10px 12px;
+font-size: 14px;
+border-radius: 60px;
+border: 1px solid #FAFAFA33;
+
+}
+.img_footer {
+    border-radius: 12px;
+}
