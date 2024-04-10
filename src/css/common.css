@@ -1,7 +1,7 @@
 body {
-  background-color: #1c1d20;
-  font-family: 'Inter Tight', sans-serif;
-  color: #fafafa;
+  background-color: var(--background);
+  font-family: var(--font);
+  color: var(--text);
 }
 
 .hidden {
