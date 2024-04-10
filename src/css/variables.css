@@ -1,0 +1,25 @@
+:root {
+  --font: 'Inter Tight', sans-serif;
+
+  --accent: #ed3b44;
+  --hover: #e0373f;
+  --text: #fafafa;
+  --background: #1c1d20;
+  --cards: #242527;
+  --arrow: #3b3b3b;
+
+  --cubic: cubic-bezier(0.4, 0, 0.2, 1);
+  --time: 500ms;
+}
+
+/* -- color-schemes for JS --
+
+Отримати кореневий елемент
+const root = document.documentElement;
+
+Змінити значення змінної CSS
+root.style.setProperty('--accent', '#новий_колір');
+
+  gren: #c6e327;
+  blue: #0041e8; 
+  orange: #ff7f08;   */
