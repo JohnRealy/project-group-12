@@ -12,29 +12,6 @@
   align-items: flex-start;
 }
 
-<<<<<<< Updated upstream
-=======
-.logo-link
-
-.logo-svg {
-  height: 80px;
-  height: 80px;
-}
-
-.logo-title
-
-/* MENU BUTTON */
-
-.menu-btn {
-  font-size: 20px;
-  background: none;
-  border: none;
-  text-decoration: underline;
-}
-
-.menu-container
-
->>>>>>> Stashed changes
 .nav-list {
   display: flex;
   align-items: center;
@@ -52,23 +29,4 @@
 .nav-link:hover,
 .nav-link:focus {
   color: #747bff;
-<<<<<<< Updated upstream
-=======
-}
-
-/* ORDER BUTTON */
-
-.order-btn {
-  border-radius: 60px;
-  background: rgb(237, 59, 68);
-  position: static;
-  width: 163px;
-  height: 55px;
-
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 18px 24px 18px 24px;
->>>>>>> Stashed changes
 }
