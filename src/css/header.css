@@ -1,12 +1,32 @@
 .header {
   padding: 20px 0;
   background-color: black;
+  width: 375px;
+  height: 80px;
 }
+
+/* logo */
 
 .logo-title {
   text-decoration: wavy;
   color: white;
 }
+
+/* button menu on tablet and desktop */
+
+.menu-btn {
+  display: none;
+  text-decoration: underline;
+  color: white;
+}
+
+/* burger on mobile */
+
+.burger {
+  color: white;
+}
+
+/* modal burger menu */
 
 .nav-list {
   display: flex;
