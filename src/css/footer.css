@@ -45,11 +45,12 @@ border-bottom: 1px solid var(--border);
 }
 
 
-.adress_footer {
+.address_footer {
     display: flex;
     gap: 10px;
   
 }
+
 .link_footer {
      height: 37px;
 
@@ -94,10 +95,6 @@ border: 1px solid var(--border);
     width: 150px;
     height: 150px;
    margin-top: 0;
-}
-.adress_footer {
-
-    
 }
 
 .link_footer {
