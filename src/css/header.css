@@ -1,15 +1,34 @@
 .header {
   padding: 20px 0;
-  width: 375px;
-  height: 80px;
+  max-width: 375px;
+  max-height: 80px;
 }
 
 /* logo */
 
-.logo-title {
-  text-decoration: wavy;
+.logo-container {
+  width: 172px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  /* Додаємо позиціонування */
+}
+
+.logo-image {
+  width: 80px;
+  height: 80px;
+}
+
+.logo-text {
+  position: absolute;
+  left: 88px;
+  top: 0;
+  margin: 0;
   color: var(--text);
   font-family: var(--font);
+  width: 84px;
+  height: 19px;
 }
 
 /* button menu on tablet and desktop */
@@ -22,21 +41,6 @@
 
 /* burger on mobile */
 
-.burger {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-}
-
-.line {
-  width: 30px;
-  height: 2px;
-  border: 2px solid rgb(250, 250, 250);
-  margin: 6px 0;
-}
 
 /* modal burger menu */
 
@@ -52,6 +56,8 @@
   font-weight: 500;
   letter-spacing: 0.02em;
   line-height: 1.5;
+  text-decoration: underline;
+  font-family: var(--font);
 }
 
 .nav-link:hover,

@@ -2,13 +2,15 @@
     <div class="container">
     
         <!-- logo -->
-
-        <a href="./index.html" class="logo-link">
-            <div class="logo">
-                <img src="../img/header/logo.png" alt="logo" width="80px" height="80px"> 
-            </div>
-            <p class="logo-title">Jefferson*</p>
-        </a>
+    <div class="logo-container">
+    <a href="./index.html" class="logo-link">
+        <div class="logo-image">
+            <img src="../img/header/logo.png" alt="logo" width="80px" height="80px">
+        </div>
+        <p class="logo-text">Jefferson*</p>
+    </a>
+    </div>
+        
 
         <!-- button menu on tablet and desktop -->
         <nav>
@@ -17,14 +19,18 @@
 
         <!-- burger on mobile -->
 
-        <div class="burger">
-            <div class="line"></div>
-            <div class="line"></div>
-        </div>
+        <button id="menu-open-button">
+            <svg class="header-menu-btn-svg" height="16" width="32">
+                <use href="/src/img/icons.svg#menu-icon"></use>
+            </svg>
+        </button>
 
         <!-- modal burger menu -->
 
         <div class="modal">
+            <svg class="icon">
+                <use href="/src/img/icons.svg/#menu-icon"></use>
+            </svg>
             <nav class="nav-list">
                  <ul>
                     <li class="nav-link"><a href="#about-me">About me</a></li>
