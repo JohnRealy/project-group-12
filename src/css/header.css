@@ -1,16 +1,43 @@
-.header .container {
+.header {
   padding: 20px 0;
-  position: absolute;
-  width: 1376px;
+  width: 375px;
   height: 80px;
-  left: 32px;
-  right: 32px;
-  top: 32px;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
 }
+
+/* logo */
+
+.logo-title {
+  text-decoration: wavy;
+  color: var(--text);
+}
+
+/* button menu on tablet and desktop */
+
+.menu-btn {
+  display: none;
+  text-decoration: underline;
+  color: var(--text);
+}
+
+/* burger on mobile */
+
+.burger {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.line {
+  width: 21px;
+  height: 2px;
+  border: 2px solid rgb(250, 250, 250);
+  margin: 6px 0;
+}
+
+/* modal burger menu */
 
 .nav-list {
   display: flex;

@@ -53,3 +53,9 @@ body {
     padding-bottom: 82px;
   }
 }
+
+/* for header and hero */
+
+.body {
+  background-image: url(/src/img/hero/hero.png);
+}
