@@ -2,14 +2,13 @@
   padding: 20px 0;
   width: 375px;
   height: 80px;
-  background-color: black;
 }
 
 /* logo */
 
 .logo-title {
   text-decoration: wavy;
-  color: white;
+  color: var(--text);
 }
 
 /* button menu on tablet and desktop */
