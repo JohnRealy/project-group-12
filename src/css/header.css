@@ -9,6 +9,7 @@
 .logo-title {
   text-decoration: wavy;
   color: var(--text);
+  font-family: var(--font);
 }
 
 /* button menu on tablet and desktop */
