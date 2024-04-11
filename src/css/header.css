@@ -58,3 +58,15 @@
 .nav-link:focus {
   color: #747bff;
 }
+
+/* Таблет (ширина від 376px до 768px) */
+@media screen and (min-width: 376px) and (max-width: 768px) {
+  /* Ваші стилі для планшетів */
+}
+
+/* Десктоп (ширина понад 768px) */
+@media screen and (min-width: 769px) and (max-width: 1440px) {
+  /* Ваші стилі для настільних комп'ютерів */
+}
+
+/* іконки через філ та строук */
