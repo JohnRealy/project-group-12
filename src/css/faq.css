@@ -6,17 +6,38 @@
   letter-spacing: -0.02em;
   color: var(--text);
   opacity: 0.4;
-  margin-bottom: 32px;
+  /* margin-bottom: 32px; */
+}
+
+.faq-section-title::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  border-radius: 2px;
+  background-color: var(--text);
+  opacity: 0.2;
+  margin: 32px auto 0px;
 }
 
 .faq-list {
   display: flex;
   flex-direction: column;
   justify-content: center;
-
   padding: 20px 0px;
   max-width: 343px;
-  gap: 40px;
+  gap: 20px;
+}
+
+.faq-list-item::after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 1px;
+  border-radius: 2px;
+  background-color: var(--text);
+  opacity: 0.2;
+  margin: 20px auto 0px;
 }
 
 .faq-content {
@@ -28,7 +49,9 @@
 .faq-button {
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 100px;
-  padding: 7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 34px;
   height: 34px;
   background-color: var(--background);
