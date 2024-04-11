@@ -107,16 +107,11 @@ padding: 18px 32px 18px 32px;
 }
 
 @media screen and (min-width: 1440px) {
-
-
-.form_footer {
-    flex-direction: row;
-    gap: 20px;
-    padding-top: 18px;
-       padding-bottom: 18px;
-     align-items: center;
+.section {
+    padding-left: 164px;
 }
 
+ 
 .input_footer {
     width: 390px;
     line-height: 24px;
