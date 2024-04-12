@@ -99,26 +99,14 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .benef-title-box {
-    display: flex;
+  .benefits-list {
+    flex-direction: row;
+    justify-content: flex-end;
   }
   .benefits-wrapper {
     max-width: 1376px;
   }
   .benefits-title {
     margin-right: auto;
-  }
-  .benef-list-link-box {
-    display: flex;
-  }
-  .benefits-item {
-    width: 332px;
-  }
-  .benefits-list {
-    max-width: 680px;
-  }
-  .benef-list-link-box {
-    display: flex;
-    flex-direction: column;
   }
 }
