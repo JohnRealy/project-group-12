@@ -2,12 +2,13 @@ import axios from 'axios';
 import iziToast from 'izitoast';
 
 export async function postComment(email, comment) {
-  const inputData = { email, comment };
   try {
-    await axios.post(
-      'https://portfolio-js.b.goit.study/api/requests',
-      inputData
-    );
+    await axios.post('https://portfolio-js.b.goit.study/api/requests', {
+      params: {
+        email,
+        comment,
+      },
+    });
     iziToast.info({
       message: 'Thank you for your comment!)',
       position: 'topRight',
@@ -25,7 +26,7 @@ export async function postComment(email, comment) {
 export async function getReviews() {
   try {
     const res = await axios.get(
-      'https://portfolio-js.b.goit.study/api/requests'
+      'https://portfolio-js.b.goit.study/api/reviews'
     );
     return res;
   } catch (err) {
