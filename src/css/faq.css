@@ -74,6 +74,11 @@
   color: var(--text);
   max-width: 265px;
 }
+
+/* .ac-panel {
+  max-height: 0;
+  overflow: hidden;
+} */
 .ac-text {
   font-weight: 500;
   font-size: 16px;
@@ -121,14 +126,14 @@
     flex-direction: column;
     height: 640px;
     align-content: space-between;
-    /* align-items: stretch; */
-    padding: 20px 0px;
-    max-width: 1440px;
+
+    padding: 0px 0px;
+    /* max-width: 1440px; */
 
     gap: 20px;
   }
 
-  .faq-container {
+  /* .faq-container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -136,11 +141,13 @@
 
   .faq-list-item {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
 
     width: calc((100% - 64px) / 2);
-  }
+  } */
+
+  /* .faq-list-item::after {
+    width: 1376px;
+  } */
 }
 
 /* ===============DESKTOP STYLES=============== */
