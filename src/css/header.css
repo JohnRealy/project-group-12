@@ -1,7 +1,14 @@
 .header {
+  position: absolute;
   padding: 32px 0;
   max-width: 375px;
   max-height: 80px;
+}
+
+.header-container {
+  position: relative;
+  width: 100%;
+  display: flex;
 }
 
 /* logo */
