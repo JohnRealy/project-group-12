@@ -28,7 +28,7 @@
 }
 
 .benefit-text {
-  width: 296px;
+  max-width: 296px;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -46,6 +46,13 @@
   align-items: center;
   margin-bottom: 64px;
 }
+.icon-benefit {
+  fill: var(--accent);
+  stroke: white;
+  stroke-width: 0;
+  width: 32px;
+  height: 32px;
+}
 .benefits-list {
   display: flex;
   flex-direction: column;
@@ -54,7 +61,7 @@
 .benefits-item {
   border-radius: 20px;
   padding: 24px;
-  width: 344px;
+  max-width: 344px;
   background: var(--cards);
   margin: 16px;
 }
@@ -64,6 +71,7 @@
   font-size: 16px;
   letter-spacing: -0.02em;
   color: var(--text);
+  border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 60px;
   margin-top: 32px;
   display: flex;
