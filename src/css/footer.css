@@ -122,14 +122,12 @@ border: 1px solid var(--border);
  
 .input_footer {
     width: 390px;
-    line-height: 24px;
+  
 
 }
 
 .btn_footer {
-    width: 150px;
-    height: 150px;
-    margin-top: 0;
+   
     margin-left: 54px;
 }
 
