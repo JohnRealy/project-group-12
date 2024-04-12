@@ -1,5 +1,5 @@
 .header {
-  padding: 20px 0;
+  padding: 32px 0;
   max-width: 375px;
   max-height: 80px;
 }
@@ -87,13 +87,10 @@
   align-items: center;
   padding: 18px 24px;
   gap: 10px;
-
   width: 163px;
   height: 55px;
-
   background: var(--accent);
   border-radius: 60px;
-
   position: absolute;
   top: 0;
   right: 0;
@@ -123,6 +120,56 @@
       max-width: 1376px;
     }
 
+/* order button (tablet and desktop) */
+/* button menu (tablet and desktop) */
+  .menu-btn {
+    display: inline-block;
+      padding: 10px 20px;
+      background-color: transparent;
+      border: none;
+      text-align: center;
+      color: var(--text);
+      font-family: var(--font);
+      cursor: pointer;
+      position: absolute;
+      top: 10px;
+      left: 50%;
+
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 19px;
+      letter-spacing: -2%;
+      text-align: left;
+      text-decoration-line: underline;
+  }
+
+  .order-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 24px;
+    gap: 10px;
+    width: 163px;
+    height: 55px;
+    background: var(--accent);
+    border-radius: 60px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+    
+  .order-btn-text {
+    font-family: var(--font);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: -0.02em;
+    color: var(--text);
+    font-size: 16px;
+    white-space: nowrap;
+  }
+
+/* button burger (mobile) */
   .burger-btn {
     display: none;
   }
