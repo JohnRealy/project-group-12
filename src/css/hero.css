@@ -1,15 +1,10 @@
-.hero {
-    
-}
+.hero {}
 
 .hero-container {
-    position: absolute;
-        width: 375px;
-        height: 300px;
-        left: 0;
-        right: 16px;
-        top: 281px;
-        bottom: 281px;
+    max-width: 375px;
+
+    padding-top: 281px;
+    padding-bottom: 281px;
 }
 
 .hero-text {

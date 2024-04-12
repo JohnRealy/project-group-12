@@ -1,153 +1,140 @@
 .header {
   position: absolute;
-  padding: 32px 0;
-  max-width: 375px;
+  padding: 32px 16px;
+  width: 100%;
   max-height: 80px;
 }
 
 .header-container {
-  position: relative;
-  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 /* logo */
 
-.logo-container {
-  width: 172px;
-  height: 80px;
+.logo-container {}
+
+.logo-link {
   display: flex;
-  align-items: center;
-  position: relative;
+  gap: 8px;
+  align-items: top;
 }
 
-.logo-image {
-  width: 80px;
-  height: 80px;
-}
+.logo-image {}
 
 .logo-text {
-  position: absolute;
-  left: 88px;
-  top: 0;
-  margin: 0;
   color: var(--text);
   font-family: var(--font);
-  width: 84px;
-  height: 19px;
 }
 
 /* button menu (tablet and desktop) */
-.menu-btn {
-  display: none;
-}
 
 /* order button (tablet and desktop) */
-.order-btn {
-  display: none;
-}
 
 /* button burger (mobile) */
 .burger-btn {
-  position: absolute;
-  top: 0;
-  right: 0;
+  display: flex;
+  border: none;
+  background-color: transparent;
 }
 
-.burger-btn-svg {}
+.burger-btn-svg {
+  align-items: start;
+  stroke: white;
+}
 
 /* ===================BREAKS======================= */
 
 /* Таблет (ширина від 376px до 768px) */
 @media screen and (min-width: 376px) and (max-width: 768px) {
-/* logo */
+
+  /* logo */
   .logo-container {
     max-width: 720px;
   }
 
-/* button menu (tablet and desktop) */
+  /* button menu (tablet and desktop) */
   .menu-btn {
     display: inline-block;
-      padding: 10px 20px;
-      background-color: transparent;
-      border: none;
-      text-align: center;
-      color: var(--text);
-      font-family: var(--font);
-      cursor: pointer;
-      position: absolute;
-      top: 10px;
-      left: 50%;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    color: var(--text);
+    font-family: var(--font);
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 50%;
 
-      font-size: 16px;
-      font-weight: 500;
-      line-height: 19px;
-      letter-spacing: -2%;
-      text-align: left;
-      text-decoration-line: underline;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: -2%;
+    text-align: left;
+    text-decoration-line: underline;
   }
 
-/* order button (tablet and desktop) */
-.order-btn {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 18px 24px;
-  gap: 10px;
-  width: 163px;
-  height: 55px;
-  background: var(--accent);
-  border-radius: 60px;
-  position: absolute;
-  top: 0;
-  right: 0;
-}
-
-.order-btn-text {
-  font-family: var(--font);
-  font-style: normal;
-  font-weight: 500;
-  line-height: 19px;
-  letter-spacing: -0.02em;
-  color: var(--text);
-  font-size: 16px;
-  white-space: nowrap;
-}
-
-/* button burger (mobile) */
-  .burger-btn {
-    display: none;
+  /* order button (tablet and desktop) */
+  .order-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 24px;
+    gap: 10px;
+    width: 163px;
+    height: 55px;
+    background: var(--accent);
+    border-radius: 60px;
+    position: absolute;
+    top: 0;
+    right: 0;
   }
+
+  .order-btn-text {
+    font-family: var(--font);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: -0.02em;
+    color: var(--text);
+    font-size: 16px;
+    white-space: nowrap;
+  }
+
+  /* button burger (mobile) */
 }
 
 /* Десктоп (ширина понад 768px) */
 @media screen and (min-width: 769px) and (max-width: 1440px) {
-  
   .logo-container {
-      max-width: 1376px;
-    }
+    max-width: 1376px;
+  }
 
-/* order button (tablet and desktop) */
-/* button menu (tablet and desktop) */
+  /* order button (tablet and desktop) */
+  /* button menu (tablet and desktop) */
   .menu-btn {
     display: inline-block;
-      padding: 10px 20px;
-      background-color: transparent;
-      border: none;
-      text-align: center;
-      color: var(--text);
-      font-family: var(--font);
-      cursor: pointer;
-      position: absolute;
-      top: 10px;
-      left: 50%;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    color: var(--text);
+    font-family: var(--font);
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 50%;
 
-      font-size: 16px;
-      font-weight: 500;
-      line-height: 19px;
-      letter-spacing: -2%;
-      text-align: left;
-      text-decoration-line: underline;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: -2%;
+    text-align: left;
+    text-decoration-line: underline;
   }
 
   .order-btn {
@@ -164,7 +151,7 @@
     top: 0;
     right: 0;
   }
-    
+
   .order-btn-text {
     font-family: var(--font);
     font-style: normal;
@@ -176,31 +163,31 @@
     white-space: nowrap;
   }
 
-/* button burger (mobile) */
+  /* button burger (mobile) */
   .burger-btn {
     display: none;
   }
 
   .menu-btn {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: transparent;
-      border: none;
-      text-align: center;
-      color: var(--text);
-      font-family: var(--font);
-      cursor: pointer;
-      position: absolute;
-      top: 10px;
-      left: 50%;
-  
-      font-size: 16px;
-      font-weight: 500;
-      line-height: 19px;
-      letter-spacing: -2%;
-      text-align: left;
-      text-decoration-line: underline;
-    }
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent;
+    border: none;
+    text-align: center;
+    color: var(--text);
+    font-family: var(--font);
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: -2%;
+    text-align: left;
+    text-decoration-line: underline;
+  }
 }
 
 /* ===================MODALs======================== */
