@@ -1,3 +1,4 @@
+/* ============== MOBILE STYLES ============== */
 .faq-section-title {
   font-family: 'Inter Tight', sans-serif;
   font-weight: 600;
@@ -6,7 +7,6 @@
   letter-spacing: -0.02em;
   color: var(--text);
   opacity: 0.4;
-  /* margin-bottom: 32px; */
 }
 
 .faq-section-title::after {
@@ -82,3 +82,64 @@
   color: var(--text);
   opacity: 0.6;
 }
+/* ============== MOBILE STYLES ============== */
+/* ============== TABLET STYLES ============== */
+@media screen and (min-width: 768px) {
+  .faq-list {
+    padding: 32px 0px;
+    max-width: 704px;
+    gap: 32px;
+  }
+
+  .faq-list-item::after {
+    margin: 24px auto 0px;
+  }
+
+  .faq-button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .ac {
+    gap: 26px;
+  }
+  .ac-header {
+    max-width: 574px;
+  }
+
+  .ac-panel {
+    max-width: 656px;
+  }
+}
+/* ============== TABLET STYLES ============== */
+
+/* ===============DESKTOP STYLES=============== */
+@media screen and (min-width: 1440px) {
+  .faq-list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: space-between;
+    /* align-items: stretch; */
+    padding: 20px 0px;
+    max-width: 1440px;
+
+    gap: 20px;
+  }
+
+  .faq-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .faq-list-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: calc((100% - 64px) / 2);
+  }
+}
+
+/* ===============DESKTOP STYLES=============== */
