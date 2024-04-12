@@ -125,10 +125,12 @@
     flex-wrap: wrap;
     flex-direction: column;
     height: 640px;
-    align-content: space-between;
+    /* align-content: space-between; */
+    justify-content: space-between;
+    align-items: center;
 
     padding: 0px 0px;
-    /* max-width: 1440px; */
+    max-width: 1440px;
 
     gap: 20px;
   }
@@ -137,17 +139,18 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-  }
+  }*/
 
-  .faq-list-item {
+  /* .faq-list-item {
     display: flex;
 
     width: calc((100% - 64px) / 2);
   } */
 
-  /* .faq-list-item::after {
-    width: 1376px;
-  } */
+  .faq-list-item::after {
+    width: 100%;
+    position: absolute;
+  }
 }
 
 /* ===============DESKTOP STYLES=============== */
