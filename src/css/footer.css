@@ -125,13 +125,6 @@ border: 1px solid var(--border);
     line-height: 24px;
 
 }
-.form_footer {
-  
-    gap: 32px;
-    padding-top: 18px;
-    padding-bottom: 18px;
-    align-items: center;
-}
 
 .btn_footer {
     width: 150px;
