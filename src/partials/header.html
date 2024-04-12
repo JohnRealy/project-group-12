@@ -1,23 +1,46 @@
 <header class="header">
   <div class="container">
     <!-- logo -->
+    <div class="logo-container">
+      <a href="./index.html" class="logo-link">
+        <div class="logo-image">
+          <img
+            src="../img/header/logo.png"
+            alt="logo"
+            width="80px"
+            height="80px"
+          />
+        </div>
+        <p class="logo-text">Jefferson*</p>
+      </a>
+    </div>
 
-    <a href="./index.html" class="logo-link">
-      <div class="logo">
-        <img
-          src="../img/header/logo.png"
-          alt="logo"
-          width="172px"
-          height="80px"
-        />
-      </div>
-    </a>
+    <!-- button menu (tablet and desktop) -->
+    <nav>
+      <button class="menu-btn">Menu</button>
+    </nav>
 
-    <!-- button menu on tablet and desktop -->
+    <!-- order button (tablet and desktop) -->
+    <button class="order-btn">
+      <a href="#" class="order-btn-text">Order the project</a>
+    </button>
 
-    <button class="menu-btn">menu</button>
+    <!-- button burger (mobile) -->
+    <button class="burger-btn" id="menu-open-button">
+      <svg class="burger-btn-svg" height="16" width="32">
+        <use href="/src/img/icons.svg#icon-men"></use>
+      </svg>
+    </button>
 
-    <!-- burger on mobile -->
+    <!-- modal -->
+    <!-- <div class="modal">
+            <ul class="modal-list">
+                <li class="modal-item"><a href="#about-me">About me</a></li>
+                <li class="modal-item"><a href="#benefits">Benefits</a></li>
+                <li class="modal-item"><a href="#projects">Projects</a></li>
+                <li class="modal-item"><a href="#faq">FAQ</a></li>
+            </ul>
+        </div> -->
 
     <div class="burger">
       <div class="line"></div>

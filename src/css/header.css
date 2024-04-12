@@ -1,45 +1,205 @@
 .header {
-  padding: 20px 0;
-  width: 375px;
-  height: 80px;
+  padding: 32px 0;
+  max-width: 375px;
+  max-height: 80px;
 }
 
 /* logo */
 
-.logo-title {
-  text-decoration: wavy;
-  color: var(--text);
+.logo-container {
+  width: 172px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  position: relative;
 }
 
-/* button menu on tablet and desktop */
+.logo-image {
+  width: 80px;
+  height: 80px;
+}
 
+.logo-text {
+  position: absolute;
+  left: 88px;
+  top: 0;
+  margin: 0;
+  color: var(--text);
+  font-family: var(--font);
+  width: 84px;
+  height: 19px;
+}
+
+/* button menu (tablet and desktop) */
 .menu-btn {
   display: none;
-  text-decoration: underline;
+}
+
+/* order button (tablet and desktop) */
+.order-btn {
+  display: none;
+}
+
+/* button burger (mobile) */
+.burger-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.burger-btn-svg {}
+
+/* ===================BREAKS======================= */
+
+/* Таблет (ширина від 376px до 768px) */
+@media screen and (min-width: 376px) and (max-width: 768px) {
+/* logo */
+  .logo-container {
+    max-width: 720px;
+  }
+
+/* button menu (tablet and desktop) */
+  .menu-btn {
+    display: inline-block;
+      padding: 10px 20px;
+      background-color: transparent;
+      border: none;
+      text-align: center;
+      color: var(--text);
+      font-family: var(--font);
+      cursor: pointer;
+      position: absolute;
+      top: 10px;
+      left: 50%;
+
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 19px;
+      letter-spacing: -2%;
+      text-align: left;
+      text-decoration-line: underline;
+  }
+
+/* order button (tablet and desktop) */
+.order-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 18px 24px;
+  gap: 10px;
+  width: 163px;
+  height: 55px;
+  background: var(--accent);
+  border-radius: 60px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.order-btn-text {
+  font-family: var(--font);
+  font-style: normal;
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: -0.02em;
   color: var(--text);
+  font-size: 16px;
+  white-space: nowrap;
 }
 
-/* burger on mobile */
-
-.burger {
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
+/* button burger (mobile) */
+  .burger-btn {
+    display: none;
+  }
 }
 
-.line {
-  width: 21px;
-  height: 2px;
-  border: 2px solid rgb(250, 250, 250);
-  margin: 6px 0;
+/* Десктоп (ширина понад 768px) */
+@media screen and (min-width: 769px) and (max-width: 1440px) {
+  
+  .logo-container {
+      max-width: 1376px;
+    }
+
+/* order button (tablet and desktop) */
+/* button menu (tablet and desktop) */
+  .menu-btn {
+    display: inline-block;
+      padding: 10px 20px;
+      background-color: transparent;
+      border: none;
+      text-align: center;
+      color: var(--text);
+      font-family: var(--font);
+      cursor: pointer;
+      position: absolute;
+      top: 10px;
+      left: 50%;
+
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 19px;
+      letter-spacing: -2%;
+      text-align: left;
+      text-decoration-line: underline;
+  }
+
+  .order-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 24px;
+    gap: 10px;
+    width: 163px;
+    height: 55px;
+    background: var(--accent);
+    border-radius: 60px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+    
+  .order-btn-text {
+    font-family: var(--font);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: -0.02em;
+    color: var(--text);
+    font-size: 16px;
+    white-space: nowrap;
+  }
+
+/* button burger (mobile) */
+  .burger-btn {
+    display: none;
+  }
+
+  .menu-btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: transparent;
+      border: none;
+      text-align: center;
+      color: var(--text);
+      font-family: var(--font);
+      cursor: pointer;
+      position: absolute;
+      top: 10px;
+      left: 50%;
+  
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 19px;
+      letter-spacing: -2%;
+      text-align: left;
+      text-decoration-line: underline;
+    }
 }
 
-/* modal burger menu */
+/* ===================MODALs======================== */
+/* modal */
 
-.nav-list {
+.modal-list {
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -47,13 +207,15 @@
   display: none;
 }
 
-.nav-link {
+.modal-item {
   font-weight: 500;
   letter-spacing: 0.02em;
   line-height: 1.5;
+  text-decoration: underline;
+  font-family: var(--font);
 }
 
-.nav-link:hover,
-.nav-link:focus {
+.modal-item:hover,
+.modal-item:focus {
   color: #747bff;
 }
