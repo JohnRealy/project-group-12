@@ -15,6 +15,7 @@ export async function postComment(email, comment) {
       'https://portfolio-js.b.goit.study/api/requests',
       params
     );
+    console.log(res.data);
     return res.data;
   } catch (err) {
     console.error(err);
