@@ -65,10 +65,7 @@
     padding: 72px 24px 24px 24px;
   }
 
-<<<<<<< Updated upstream
-@media screen and (max-width: 374px) {
-  .link_footer {
-=======
+
   .visually-hidden {
   position: absolute;
   width: 1px;
@@ -153,7 +150,7 @@
 /* ========================== */
 @media screen and (max-width: 374px){
 .link_footer {
->>>>>>> Stashed changes
+
     padding: 8px 10px 8px 10px;
     font-size: 12px;
   }
@@ -200,7 +197,7 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .section {
+  .footer_container {
     padding-left: 164px;
   }
 
