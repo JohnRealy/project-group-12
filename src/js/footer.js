@@ -42,7 +42,6 @@ async function onSubmit(evt) {
 // =====================================================
 function modal(){
     const modal = document.querySelector("[data-modal]");
-    // const elementModal = document.querySelector(".modal");
     const closeModalBtn = document.querySelector("[data-modal-close]");
     refs.formFooter.reset();
     toggleModal();
@@ -51,11 +50,12 @@ function modal(){
     modal.classList.toggle("is-hidden");
     }
 
-    refs.modal.addEventListener('click', (e) => {
-        if (e.target === e.currentTarget) {
-             toggleModal();
+    modal.addEventListener('click', (e) => {
+           refs.formFooter.reset();
+        if (e.target !== e.currentTarget) {
+           return
         }
-    
+      toggleModal();
 });
     closeModalBtn.addEventListener("click", () => {
         refs.formFooter.reset();
