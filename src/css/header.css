@@ -2,7 +2,6 @@
   position: absolute;
   padding: 32px 32px;
   width: 100%;
-  max-height: 80px;
 }
 
 .header-container {
@@ -39,15 +38,10 @@
 
 /* ===================BREAKS======================= */
 
-/* Таблет (ширина від 376px до 768px) */
-@media screen and (min-width: 376px) and (max-width: 768px) {
-  .logo-container {
-    max-width: 720px;
-  }
-}
+@media screen and (max-width: 374px) {}
 
-/* Десктоп (ширина понад 768px) */
-@media screen and (min-width: 769px) and (max-width: 1440px) {
+
+@media screen and (min-width: 768px) {
   .logo-container {
     max-width: 1376px;
   }
@@ -93,6 +87,12 @@
   .burger-btn {
     display: none;
   }
+}
+
+@media screen and (min-width: 1440px) {
+  .header-container {
+      max-width: 1376px;
+    }
 }
 
 /* ===================MODALs======================== */
