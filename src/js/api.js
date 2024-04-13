@@ -11,8 +11,11 @@ export async function postComment(email, comment) {
   };
 
   try {
-    await axios.post('https://portfolio-js.b.goit.study/api/requests', params);
-    return;
+    const res = await axios.post(
+      'https://portfolio-js.b.goit.study/api/requests',
+      params
+    );
+    return res.data;
   } catch (err) {
     console.error(err);
   }
