@@ -19,6 +19,9 @@
   position: relative;
 }
 
+.faq-list-item {
+  padding-top: 20px;
+}
 .faq-section-title::after {
   content: '';
   display: block;
@@ -41,10 +44,21 @@
   margin: 20px auto 0px;
 }
 
+/* .faq-list-item::marker {
+  display: none;
+} */
+
 .ac-content {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+/* Panel class */
+.ac-panel {
+  overflow: hidden;
+  transition-property: height, visibility;
+  transition-timing-function: ease;
 }
 
 .faq-button {
@@ -60,6 +74,10 @@
 
 .faq-button-svg {
   stroke: #fafafa;
+  transition: transform 250ms ease-in-out;
+}
+.ac.js-enabled.is-active.faq-button-svg {
+  transform: rotate(180deg);
 }
 
 .faq-content {
@@ -68,7 +86,7 @@
   gap: 16px;
 }
 
-.ac-header {
+.faq-header {
   font-weight: 600;
   font-size: 20px;
   line-height: 1.5;
@@ -100,6 +118,9 @@
     width: 704px;
     /* gap: 32px; */
   }
+  .faq-list-item {
+    padding-top: 32px;
+  }
 
   .ac-content {
     gap: 26px;
@@ -113,11 +134,11 @@
     height: 40px;
   }
 
-  .ac-header {
+  .faq-header {
     max-width: 574px;
   }
 
-  .ac-panel {
+  .faq-panel {
     max-width: 656px;
   }
 }
@@ -165,9 +186,9 @@
     gap: 0px;
   }
 
-  .ac-panel {
+  /* .faq-panel {
     display: none;
-  }
+  } */
   /* ===== ПОЛОСКИ======= */
   .faq-list-item::after {
     display: none;
