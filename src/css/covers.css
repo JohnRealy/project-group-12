@@ -12,6 +12,15 @@
   margin-right: auto;
 }
 
+.titlle-covers {
+  display: none;
+}
+
+.content {
+  background-image: url(../img/covers/ellipse_min.png);
+
+}
+
 @media screen and (min-width: 768px) {
   .container-covers {
     max-width: 768px;
@@ -34,6 +43,9 @@
     padding-top: 82px;
     padding-bottom: 82px;
   }
+  .content {
+  background-image: url(../img/covers/elements_vectors-min.png);
+}
 }
 
 
@@ -47,18 +59,15 @@
   height: 100%;
   display: flex;
   transform: rotate(16deg);
-  margin-bottom: 50px;
-  margin-right: ;
 }
 
 .marquee__line {
   flex-shrink: 0;
-  margin-right: 50px; 
   display: flex;
   align-items: center;
   justify-content: center;
-  width: calc(100% / 4); 
-  white-space: nowrap;
+  width: calc(100% / 3); 
+  margin-bottom: 50px;
   animation-name: marqueeLine;
   animation-duration: 5s;
   animation-timing-function: ease-in-out;
@@ -67,7 +76,7 @@
 
 @keyframes marqueeLine {
   from {
-    transform: translateX(100%);
+    transform: translateX(150%);
   }
   
   to {
