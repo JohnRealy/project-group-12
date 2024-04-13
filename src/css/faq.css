@@ -27,6 +27,7 @@
   padding: 20px 0px;
   max-width: 343px;
   gap: 20px;
+  position: relative;
 }
 
 .faq-list-item::after {
@@ -124,32 +125,50 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    height: 640px;
-    /* align-content: space-between; */
+
     justify-content: space-between;
     align-items: center;
-
     padding: 0px 0px;
     max-width: 1440px;
-
     gap: 20px;
   }
 
-  /* .faq-container {
+  .faq-container {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
-  }*/
+  }
 
-  /* .faq-list-item {
+  .faq-list-item {
     display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 
-    width: calc((100% - 64px) / 2);
-  } */
+    position: relative;
+  }
 
+  /* ===== ПОЛОСКИ======= */
   .faq-list-item::after {
-    width: 100%;
+    content: '';
     position: absolute;
+    left: 0;
+    top: 100%;
+    transform: translateY(-50%);
+    width: 100%;
+    /* bottom: -26px; */
+  }
+
+  .faq-list::after {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: -32px;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 100%;
+    background-color: var(--text);
+    opacity: 0.2;
+    content: '';
   }
 }
 
