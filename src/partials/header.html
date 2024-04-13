@@ -18,7 +18,11 @@
     </button>
 
     <!-- button burger (mobile) -->
-    <button class="burger-btn" id="mobile-menu-open">
+    <button
+    class="burger-btn"
+    id="mobile-menu-open"
+    aria-label="Mobile Menu Open"
+    >
       <svg class="burger-btn-svg" height="28" width="28">
         <use href="./img/icons.svg#icon-burger"></use>
       </svg>
@@ -26,8 +30,12 @@
 
 <!-- mobile-modal-menu -->
 
-   <div id="mobile-menu-id" class="mobile-menu is-open">
-        <button id="mobile-menu-close" class="mobile-menu-close-btn">
+   <div id="mobile-menu-id" class="mobile-menu">
+        <button
+        id="mobile-menu-close"
+        class="mobile-menu-close-btn"
+        aria-label="Mobile Menu Close"
+        > 
           <svg class="icon-close" height="28" width="28">
             <use href="./img/icons.svg#icon-close"></use>
           </svg>
@@ -48,14 +56,12 @@
           </li>
       </ul>
       </nav>
-      <button class="order-btn">
+      <button class="order-btn2">
         <a href="#" class="order-btn-text">Order the project</a>
       </button>
    </div>
 
 <!-- tablet+desktop-modal-menu -->
 
-
-    <script src="../js/mobile-menu.js"></script>
   </div>
 </header>

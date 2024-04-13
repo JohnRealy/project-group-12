@@ -107,13 +107,13 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* transition-property: transform, opacity, visibility;
+  transition-property: transform, opacity, visibility;
   transition-duration: .15s;
   transition-timing-function: ease-in-out;
   transform: translate(100%);
   opacity: 0%;
   visibility: hidden;
-  pointer-events: none; */
+  pointer-events: none;
 }
 
 .mobile-menu-close-btn {
@@ -121,6 +121,8 @@
   padding: 0;
   border: none;
   background-color: transparent;
+  margin: 32px 16px;
+  justify-content: flex-end;
 }
 
 .icon-close {
@@ -144,7 +146,7 @@
 }
 
 
-.order-btn {
+.order-btn2 {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -153,6 +155,9 @@
   height: 55px;
   background: var(--accent);
   border-radius: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 150px;
 }
 
 .order-btn-text {
@@ -164,4 +169,11 @@
   color: var(--text);
   font-size: 16px;
   white-space: nowrap;
+}
+
+.is-open {
+  transform: translateX(0);
+  visibility: visible;
+  opacity: 100%;
+  pointer-events: auto;
 }
