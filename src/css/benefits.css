@@ -63,7 +63,6 @@
   padding: 24px;
   max-width: 344px;
   background: var(--cards);
-  margin: 16px;
 }
 
 .benefit-link {
@@ -92,7 +91,7 @@
     text-shadow: none;
   }
   .benefits-wrapper {
-    max-width: 704px;
+    min-width: 704px;
   }
   .benefits-item {
     max-width: calc((100% - 16px) / 2);
