@@ -36,31 +36,45 @@ async function onSubmit(evt) {
         console.log(res);
         markupModal(res);
         modal();
-        refs.formFooter.reset();
+    //  refs.formFooter.reset();
     }
 }
 // =====================================================
 function modal(){
-
+    const modal = document.querySelector("[data-modal]");
+    // const elementModal = document.querySelector(".modal");
+    const closeModalBtn = document.querySelector("[data-modal-close]");
+    refs.formFooter.reset();
     toggleModal();
+
   function toggleModal() {
-    refs.modal.classList.toggle("is-hidden");
+    modal.classList.toggle("is-hidden");
     }
-    refs.modal.addEventListener('click', toggleModal);
-     refs.closeModalBtn.addEventListener("click", toggleModal);
+
+    refs.modal.addEventListener('click', (e) => {
+        if (e.target === e.currentTarget) {
+             toggleModal();
+        }
+    
+});
+    closeModalBtn.addEventListener("click", () => {
+        refs.formFooter.reset();
+        toggleModal()
+    });
+     
 }
 // ===============================================================
 function markupModal(obj) {
    const { title, message } = obj;
     const messageModal = ` <button type="button" class="modal-close-btn" data-modal-close>
             <svg class="modal-icon-close" width="8px" height="8px">
-                <use href="../img/icon.svg#icon-close"></use>
+                <use href="../img/icons.svg#icon-close"></use>
             </svg>
         </button>
         <h2 class="modal-title">${title}</h2>
         <p class="modal-text">${message}</p>`;
      
-  return refs.elementModal.innerHTML=messageModal;
+  refs.elementModal.innerHTML = messageModal;
 }
 
 
