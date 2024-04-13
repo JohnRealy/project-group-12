@@ -1,12 +1,10 @@
 .header {
   position: absolute;
-  padding: 32px 32px;
+  padding: 32px 0;
   width: 100%;
 }
 
 .header-container {
-  margin-left: auto;
-  margin-right: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -27,19 +25,20 @@
 
 .burger-btn {
   display: flex;
+  padding: 0;
   border: none;
   background-color: transparent;
 }
 
 .burger-btn-svg {
-  align-items: start;
+  justify-content: end;
   stroke: white;
 }
 
 /* ===================BREAKS======================= */
 
-@media screen and (max-width: 374px) {}
-
+/* @media screen and (max-width: 374px) {
+} */
 
 @media screen and (min-width: 768px) {
   .logo-container {
@@ -91,14 +90,14 @@
 
 @media screen and (min-width: 1440px) {
   .header-container {
-      max-width: 1376px;
-    }
+    max-width: 1376px;
+  }
 }
 
 /* ===================MODALs======================== */
 /* modal */
 
-.modal-list {
+/* .modal-list {
   display: flex;
   align-items: center;
   justify-content: flex-end;
@@ -117,4 +116,4 @@
 .modal-item:hover,
 .modal-item:focus {
   color: #747bff;
-}
+} */
