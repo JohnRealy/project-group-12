@@ -1,21 +1,119 @@
 .header {
-  padding: 20px 0;
+  position: absolute;
+  padding: 32px 0;
+  width: 100%;
 }
 
-.nav-list {
+.header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* logo */
+
+.logo-link {
+  display: flex;
+  gap: 8px;
+  align-items: top;
+}
+
+.logo-text {
+  color: var(--text);
+  font-family: var(--font);
+}
+
+.burger-btn {
+  display: flex;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.burger-btn-svg {
+  justify-content: end;
+  stroke: white;
+}
+
+/* ===================BREAKS======================= */
+
+/* @media screen and (max-width: 374px) {
+} */
+
+@media screen and (min-width: 768px) {
+  .logo-container {
+    max-width: 1376px;
+  }
+
+  .menu-btn {
+    display: flex;
+    padding-top: 10px;
+    background-color: transparent;
+    border: none;
+    color: var(--text);
+    font-family: var(--font);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    text-decoration-line: underline;
+  }
+
+  .order-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 24px;
+    width: 163px;
+    height: 55px;
+    background: var(--accent);
+    border-radius: 60px;
+  }
+
+  .order-btn-text {
+    font-family: var(--font);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: -0.02em;
+    color: var(--text);
+    font-size: 16px;
+    white-space: nowrap;
+  }
+
+  .burger-btn {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .header-container {
+    max-width: 1376px;
+  }
+}
+
+/* ===================MODALs======================== */
+/* modal */
+
+/* .modal-list {
   display: flex;
   align-items: center;
   justify-content: flex-end;
   gap: 40px;
+  display: none;
 }
 
-.nav-link {
+.modal-item {
   font-weight: 500;
   letter-spacing: 0.02em;
   line-height: 1.5;
+  text-decoration: underline;
+  font-family: var(--font);
 }
 
-.nav-link:hover,
-.nav-link:focus {
+.modal-item:hover,
+.modal-item:focus {
   color: #747bff;
-}
+} */
