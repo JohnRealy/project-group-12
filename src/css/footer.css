@@ -58,15 +58,14 @@
 }
 /* ========================== */
 .modal {
-    width: 392px;
-    height: 586px;
-    top: 50%;
-    left: 50%;
-    padding: 72px 24px 24px 24px;
-  }
+  width: 392px;
+  height: 586px;
+  top: 50%;
+  left: 50%;
+  padding: 72px 24px 24px 24px;
+}
 
-
-  .visually-hidden {
+.visually-hidden {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -148,9 +147,8 @@
   margin-bottom: 8px;
 }
 /* ========================== */
-@media screen and (max-width: 374px){
-.link_footer {
-
+@media screen and (max-width: 374px) {
+  .link_footer {
     padding: 8px 10px 8px 10px;
     font-size: 12px;
   }
