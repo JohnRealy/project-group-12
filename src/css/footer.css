@@ -56,9 +56,104 @@
   height: 44px;
   border-radius: 12px;
 }
+/* ========================== */
+.modal {
+    width: 392px;
+    height: 586px;
+    top: 50%;
+    left: 50%;
+    padding: 72px 24px 24px 24px;
+  }
 
+<<<<<<< Updated upstream
 @media screen and (max-width: 374px) {
   .link_footer {
+=======
+  .visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  background-color: var(--colore-background-backdrop);
+
+  transition: opacity var(--transition-duration)
+      var(--transition-timing-function),
+    visibility var(--transition-duration) var(--transition-timing-function);
+}
+
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.modal {
+  position: absolute;
+  background: var(--colore-background-modal);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  transform: translate(-50%, -50%) scale(1);
+  transition: transform 500ms var(--transition-timing-function);
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scaley(0);
+}
+.modal-close-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: var(--colore-background-icon-close);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0;
+
+  cursor: pointer;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  transition: background-color var(--transition-duration)
+    var(--transition-timing-function);
+}
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  background-color: var(--colore-backgrond-icon-hf);
+}
+.modal-icon-close {
+  transition: fill var(--transition-duration) var(--transition-timing-function);
+}
+
+.modal-close-btn:hover .modal-icon-close,
+.modal-close-btn:focus .modal-icon-close {
+  fill: var(--color-buton-white);
+}
+
+.modal-title {
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 8px;
+}
+/* ========================== */
+@media screen and (max-width: 374px){
+.link_footer {
+>>>>>>> Stashed changes
     padding: 8px 10px 8px 10px;
     font-size: 12px;
   }
