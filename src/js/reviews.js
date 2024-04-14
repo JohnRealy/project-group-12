@@ -2,8 +2,9 @@
 // import { getData } from './api';
 // import Swiper from './swiper';
 // import Swiper, { Navigation } from 'swiper';
-import Swiper from 'swiper';
+// import Swiper from 'swiper';
 import { getReviews } from './api';
+import { getSwiper } from './swiper';
 
 // import { Navigation, Keyboard } from 'swiper/modules';
 
@@ -56,7 +57,7 @@ async function renderPage() {
   reviewList.insertAdjacentHTML('afterbegin', createMarkup(await getReviews()));
 }
 
-new Swiper('.swiper', {
+getSwiper({
   spaceBetween: 16,
 });
 
