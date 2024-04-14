@@ -17,7 +17,7 @@
   display: flex;
   gap: 20px;
   margin-bottom: 20px;
-  transform: rotate(16deg);
+  transform: rotate(17deg);
 }
 
 .marquee__line {
@@ -26,20 +26,20 @@
   justify-content: center;
 
   animation-name: marqueeLine;
-  animation-duration: 5s;
+  animation-duration: 9s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
 
 @keyframes marqueeLine {
   0%  {
-    transform: translateX(-225%);
+    transform: translateX(-300%);
   }
   50% {
     transform: translateX(5%);
   }
   100% {
-      transform: translateX(-225%);
+      transform: translateX(-300%);
     }
 }
 
@@ -52,23 +52,26 @@
   .content-covers {
     background-image: url(../img/covers/elements_vectors-min.png);
   }
-
+  .marquee {
+        max-height: 960px;
+      }
   .marquee__inner {
     gap: 30px;
     margin-bottom: 30px;
   }
-    .marquee {
-      max-height: 960px;
-    }
+  .marquee__line {
+    animation-duration: 5s;
+  }
+    
   @keyframes marqueeLine {
     0% {
-      transform: translateX(-125%);
+      transform: translateX(-175%);
     }
     50% {
-      transform: translateX(125%);
+      transform: translateX(5%);
     }
     100% {
-      transform: translateX(-125%);
+      transform: translateX(-175%);
     }
   }
 }
@@ -81,5 +84,16 @@
   .marquee__inner {
     gap: 50px;
     margin-bottom: 50px;
+  }
+  @keyframes marqueeLine {
+    0% {
+      transform: translateX(-55%);
+    }
+    50% {
+      transform: translateX(75%);
+    }
+    100% {
+      transform: translateX(-55%);
+    }
   }
 }
