@@ -14,12 +14,12 @@
   margin-bottom: 32px;
 }
 
-.swiper {
+/* .swiper {
   max-width: 343px;
   height: 812px;
   border-radius: 24px;
   background: #242527;
-}
+} */
 
 .projects-item {
   max-width: 343px;
@@ -142,13 +142,13 @@
 @media screen and (min-width: 768px) {
   .projects-section {
     max-width: 768px;
-    padding: 48px 32px 148px 32px;
+    padding: 48px 32px 160px 32px;
   }
 
-  .swiper {
+  /* .swiper {
     max-width: 704px;
     height: 1191px;
-  }
+  } */
 
   .projects-item {
     max-width: 704px;
@@ -204,14 +204,14 @@
 @media screen and (min-width: 1440px) {
   .projects-section {
     max-width: 1440px;
-    padding: 82px 32px 182px 32px;
+    padding: 82px 32px 214px 32px;
   }
 
-  .swiper {
+  /* .swiper {
     border-radius: 24px;
     max-width: 1376px;
     height: 625px;
-  }
+  } */
 
   .projects-item {
     max-width: 1376px;
