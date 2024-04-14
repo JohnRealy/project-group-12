@@ -90,9 +90,7 @@
 }
 
 @media screen and (min-width: 1440px) {
-  .content-covers {
-    background-image: url(../img/covers/elements_vectors-min.png);
-  }
+
 
   .marquee__inner {
     gap: 50px;
