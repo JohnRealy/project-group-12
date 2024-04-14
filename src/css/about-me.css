@@ -202,12 +202,10 @@ left: 310px;
 
 .swiper-wrapper {
   display: flex;
-  margin-right: 55px;
+  margin-right: 30px;
   overflow: hidden;
-  width: 265px;
+  width: 260px;
 }
-
-
 
 .active {
 background-color: var(--accent);
@@ -252,6 +250,7 @@ align-items: center;
   width: 28px;
   height: 28px;
   fill: var(--border);
+  
 }
 
 
@@ -262,12 +261,27 @@ align-items: center;
 
 
 
+@media screen and (max-width: 373.99px) {
+  .swiper {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 343px;
+  }
 
+  .swiper-wrapper {
+    display: flex;
+    margin-right: 45px;
+    overflow: hidden;
+    width: 200px;
+  }
 
+  .swiper-slide {
+    width: 100px;
+    height: 100px;
+  }
 
-
-
-
+}
 
 
 /* Photo */
