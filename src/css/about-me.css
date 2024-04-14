@@ -243,7 +243,7 @@ align-items: center;
   background-color: transparent;
     width: 28px;
       height: 28px;
-
+margin: 0;
 }
 
 .arrow-swiper-about {
@@ -266,7 +266,7 @@ align-items: center;
     display: flex;
     justify-content: start;
     align-items: center;
-    width: 343px;
+    width: 305px;
   }
 
   .swiper-wrapper {
