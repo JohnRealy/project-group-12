@@ -1,5 +1,5 @@
 .projects-section {
-  padding: 32px 16px 148px 16px;
+  padding: 32px 16px;
 }
 
 .projects–title {
@@ -142,7 +142,7 @@
 @media screen and (min-width: 768px) {
   .projects-section {
     max-width: 768px;
-    padding: 48px 32px 160px 32px;
+    padding: 48px 32px;
   }
 
   /* .swiper {
@@ -204,7 +204,7 @@
 @media screen and (min-width: 1440px) {
   .projects-section {
     max-width: 1440px;
-    padding: 82px 32px 214px 32px;
+    padding: 82px 32px;
   }
 
   /* .swiper {
