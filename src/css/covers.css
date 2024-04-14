@@ -13,7 +13,8 @@
 
 .content-covers {
   background-image: url(../img/covers/ellipse_min.png);
-  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .marquee {
