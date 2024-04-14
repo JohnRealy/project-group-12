@@ -97,6 +97,7 @@
   .marquee__inner {
     gap: 50px;
     margin-bottom: 50px;
+    top: -180px;
   }
     @keyframes marqueeLine {
       0% {
