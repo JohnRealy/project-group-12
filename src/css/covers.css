@@ -42,13 +42,13 @@
 
 @keyframes marqueeLine {
   0%  {
-    transform: translateX(-250%);
+    transform: translateX(-280%);
   }
   50% {
     transform: translateX(0%);
   }
   100% {
-      transform: translateX(-250%);
+      transform: translateX(-280%);
     }
 }
 
@@ -75,36 +75,37 @@
   .covers-image {
     min-width: 514px;
   }
-    
+  
   @keyframes marqueeLine {
     0% {
-      transform: translateX(-280%);
+      transform: translateX(-260%);
     }
     50% {
-      transform: translateX(5%);
+      transform: translateX(0%);
     }
     100% {
-      transform: translateX(-280%);
+      transform: translateX(-260%);
     }
   }
+
 }
 
 @media screen and (min-width: 1440px) {
-
-
   .marquee__inner {
     gap: 50px;
     margin-bottom: 50px;
   }
-  @keyframes marqueeLine {
-    0% {
-      transform: translateX(-160%);
+    @keyframes marqueeLine {
+      0% {
+        transform: translateX(-150%);
+      }
+  
+      50% {
+        transform: translateX(0%);
+      }
+  
+      100% {
+        transform: translateX(-150%);
+      }
     }
-    50% {
-      transform: translateX(20%);
-    }
-    100% {
-      transform: translateX(-160%);
-    }
-  }
 }
