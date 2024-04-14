@@ -8,6 +8,8 @@ export function getSwiper(params) {
 
 // ================ / please call me / ================
 
+// import { getSwiper } from './swiper';
+
 // getSwiper({
 //   modules: [Navigation, Keyboard],
 //   speed: 800,
