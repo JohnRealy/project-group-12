@@ -69,7 +69,7 @@
     margin-bottom: 30px;
   }
   .marquee__line {
-    animation-duration: 5s;
+    animation-duration: 6s;
   }
   .covers-image {
     min-width: 514px;
@@ -77,13 +77,13 @@
     
   @keyframes marqueeLine {
     0% {
-      transform: translateX(-175%);
+      transform: translateX(-280%);
     }
     50% {
       transform: translateX(5%);
     }
     100% {
-      transform: translateX(-175%);
+      transform: translateX(-280%);
     }
   }
 }
@@ -99,13 +99,13 @@
   }
   @keyframes marqueeLine {
     0% {
-      transform: translateX(-55%);
+      transform: translateX(-160%);
     }
     50% {
-      transform: translateX(75%);
+      transform: translateX(20%);
     }
     100% {
-      transform: translateX(-55%);
+      transform: translateX(-160%);
     }
   }
 }
