@@ -42,13 +42,13 @@
 
 @keyframes marqueeLine {
   0%  {
-    transform: translateX(-300%);
+    transform: translateX(-250%);
   }
   50% {
-    transform: translateX(5%);
+    transform: translateX(0%);
   }
   100% {
-      transform: translateX(-300%);
+      transform: translateX(-250%);
     }
 }
 
