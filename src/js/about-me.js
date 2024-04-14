@@ -1,4 +1,4 @@
-import { getSwiper } from './swiper';
+import { getSwiper } from './swiper.js';
 
 getSwiper({
   //   modules: [Navigation, Keyboard],
