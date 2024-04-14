@@ -60,6 +60,7 @@
 @media screen and (min-width: 768px) {
   .content-covers {
     background-image: url(../img/covers/elements_vectors-min.png);
+      background-position: left;
   }
   .marquee {
         max-height: 960px;
