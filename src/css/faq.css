@@ -163,8 +163,6 @@
     display: flex;
     align-items: center;
     max-width: 1376px;
-    /* justify-content: flex-start; */
-
     flex-direction: row;
     flex-wrap: wrap;
     gap: 0px;
@@ -177,7 +175,8 @@
   .faq-list-item {
     display: flex;
     width: 688px;
-    min-height: 184px;
+    min-height: 124px;
+    /* height: auto; */
     position: relative;
     flex-direction: row;
     flex-wrap: wrap;
@@ -191,12 +190,17 @@
 
   .faq-content {
     max-width: 656px;
-    gap: 0px;
+    gap: 16px;
   }
 
-  /* .faq-panel {
-    display: none;
-  } */
+  .faq-button {
+    top: 32px;
+    right: 32px;
+  }
+  .is-active .ac-panel {
+    margin-bottom: 26px;
+  }
+
   /* ===== ПОЛОСКИ======= */
   .faq-list-item::after {
     display: none;
