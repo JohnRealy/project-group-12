@@ -94,7 +94,7 @@
 }
 
 .faq-button-svg {
-  stroke: #fafafa;
+  fill: #fafafa;
   transition: transform 250ms ease-in-out;
 }
 .ac.js-enabled.is-active .faq-button-svg {
