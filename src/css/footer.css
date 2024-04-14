@@ -1,7 +1,7 @@
 .title_footer {
   font-size: 40px;
   display: flex;
-  gap: 4px;
+ 
 }
 
 .title_work {
@@ -55,6 +55,7 @@
   width: 44px;
   height: 44px;
   border-radius: 12px;
+  margin-right: 8px;
 }
 /* ========================== */
 
@@ -87,7 +88,7 @@
   left: 0px;
   top: 0px;
   background-color: #0F0F1099;
-;
+
 
   transition: opacity 250ms
       cubic-bezier(0.4, 0, 0.2, 1);
@@ -144,6 +145,7 @@
 .modal-text {
   width: 100%;
   font-size: 16px;
+  opacity: 0.6;
 }
 /* ========================== */
 @media screen and (max-width: 374px) {
@@ -168,10 +170,15 @@
 }
 
 @media screen and (min-width: 768px) {
+  .footer_section {
+    padding-top: 80px;
+  }
+
   .img_footer {
     width: 70px;
     height: 70px;
     border-radius: 24px;
+     margin-right: 20px;
   }
 
   .title_footer {
@@ -190,7 +197,7 @@
     width: 245px;
     line-height: 24px;
   }
-
+ 
   .btn_footer {
     width: 150px;
     height: 150px;
@@ -223,7 +230,7 @@
 
 @media screen and (min-width: 1440px) {
   .footer_container {
-    padding-left: 164px;
+    padding-left: 196px;
   }
 
   .input_footer {
