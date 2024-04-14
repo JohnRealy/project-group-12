@@ -53,7 +53,7 @@
 }
 
 .covers-image {
-  min-width: 280px;
+  min-width: 282px;
 }
 
 
@@ -70,6 +70,9 @@
   }
   .marquee__line {
     animation-duration: 5s;
+  }
+  .covers-image {
+    min-width: 514px;
   }
     
   @keyframes marqueeLine {
