@@ -71,6 +71,7 @@
   .marquee__inner {
     gap: 30px;
     margin-bottom: 30px;
+    top: -100px;
   }
   .marquee__line {
     animation-duration: 8s;
