@@ -57,12 +57,14 @@
   border-radius: 12px;
 }
 /* ========================== */
+
+
 .modal {
-  width: 392px;
-  height: 586px;
+  width: 343px;
+  height: 276px;
   top: 50%;
   left: 50%;
-  padding: 72px 24px 24px 24px;
+  padding: 64px 32px 64px 32px;
 }
 
 .visually-hidden {
@@ -84,11 +86,13 @@
   height: 100%;
   left: 0px;
   top: 0px;
-  background-color: var(--colore-background-backdrop);
+  background-color: #0F0F1099;
+;
 
-  transition: opacity var(--transition-duration)
-      var(--transition-timing-function),
-    visibility var(--transition-duration) var(--transition-timing-function);
+  transition: opacity 250ms
+      cubic-bezier(0.4, 0, 0.2, 1);
+    visibility: 250ms
+      cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .backdrop.is-hidden {
@@ -98,12 +102,14 @@
 }
 .modal {
   position: absolute;
-  background: var(--colore-background-modal);
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
+  background:var(--background);
+  
+    border: none;
+     border: 1px solid var(--border);
+  border-radius: 20px;
   transform: translate(-50%, -50%) scale(1);
-  transition: transform 500ms var(--transition-timing-function);
+  transition: transform 500ms  cubic-bezier(0.4, 0, 0.2, 1);
+
 }
 
 .backdrop.is-hidden .modal {
@@ -116,35 +122,27 @@
 
   width: 24px;
   height: 24px;
-  border-radius: 50%;
-  background-color: var(--colore-background-icon-close);
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  
+  background-color: transparent;
+  border: none;
   padding: 0;
-
+  stroke: white;
   cursor: pointer;
   position: absolute;
-  top: 24px;
-  right: 24px;
-  transition: background-color var(--transition-duration)
-    var(--transition-timing-function);
-}
-.modal-close-btn:hover,
-.modal-close-btn:focus {
-  background-color: var(--colore-backgrond-icon-hf);
-}
-.modal-icon-close {
-  transition: fill var(--transition-duration) var(--transition-timing-function);
+  top: 25.5px;
+  right: 25.5px;
+ 
 }
 
-.modal-close-btn:hover .modal-icon-close,
-.modal-close-btn:focus .modal-icon-close {
-  fill: var(--color-buton-white);
-}
 
 .modal-title {
-  font-weight: 500;
+  
+  font-size: 20px ;
   text-align: center;
-  margin-bottom: 8px;
+  margin-bottom: 16px;
+}
+.modal-text {
+  font-size: 16px;
 }
 /* ========================== */
 @media screen and (max-width: 374px) {
@@ -152,6 +150,20 @@
     padding: 8px 10px 8px 10px;
     font-size: 12px;
   }
+
+.modal {
+ width: 300px;
+ height: 200px;
+  
+  padding: 55px 24px 55px 24px;
+}
+
+.modal-title{
+  font-size: 16px;
+}
+.modal-text {
+  font-size: 14px;
+}
 }
 
 @media screen and (min-width: 768px) {
@@ -192,6 +204,20 @@
   .address_footer {
     gap: 8px;
   }
+.modal {
+ width: 492px;
+ height: 246px;
+  
+  padding: 64px;
+}
+
+.modal-title{
+  font-size: 20px;
+}
+.modal-text {
+  font-size: 16px;
+}
+
 }
 
 @media screen and (min-width: 1440px) {
