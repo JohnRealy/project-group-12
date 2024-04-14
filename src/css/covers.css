@@ -33,13 +33,13 @@
 
 @keyframes marqueeLine {
   0%  {
-    transform: translateX(-100%);
+    transform: translateX(-225%);
   }
   50% {
-    transform: translateX(0%);
+    transform: translateX(5%);
   }
   100% {
-      transform: translateX(-100%);
+      transform: translateX(-225%);
     }
 }
 
@@ -60,6 +60,17 @@
     .marquee {
       max-height: 960px;
     }
+  @keyframes marqueeLine {
+    0% {
+      transform: translateX(-125%);
+    }
+    50% {
+      transform: translateX(125%);
+    }
+    100% {
+      transform: translateX(-125%);
+    }
+  }
 }
 
 @media screen and (min-width: 1440px) {
