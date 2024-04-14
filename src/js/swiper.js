@@ -1,5 +1,11 @@
 // ================ / html example / =========================
+import Swiper from 'swiper';
 
+// ================ / html example / ================
+
+export function getSwiper(params) {
+  new Swiper('.swiper', params);
+}
 // <!-- Slider main container -->
 // <div class="swiper">
 //   <!-- Additional required wrapper -->

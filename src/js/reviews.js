@@ -2,32 +2,32 @@
 // import { getData } from './api';
 // import Swiper from './swiper';
 // import Swiper, { Navigation } from 'swiper';
-import Swiper from 'swiper';
-import { getReviews } from './api';
+import Swiper from './swiper.js';
+import { getReviews } from './api.js';
 
 // import { Navigation, Keyboard } from 'swiper/modules';
 
-// const swiper = new Swiper('.swiper-container', {
-//   modules: [Navigation],
-//   breakpoints: {
-//     320: {
-//       slidesPerView: 1,
-//     },
-//     768: {
-//       slidesPerView: 2,
-//       spaceBetween: 16,
-//     },
-//     1440: {
-//       slidesPerView: 4,
-//       spaceBetween: 16,
-//     },
-//   },
-//   navigation: {
-//     nextEl: '.nextBtn',
-//     prevEl: '.prevBtn',
-//     disabledClass: 'swiper-button-disabled',
-//   },
-// });
+var swiper = new Swiper('.swiper-container', {
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  breakpoints: {
+    375: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 16,
+    },
+    1440: {
+      slidesPerView: 4,
+      grabCursor: true,
+      spaceBetween: 18,
+    },
+  },
+});
 // API
 
 function createMarkup(arr) {
@@ -56,10 +56,7 @@ async function renderPage() {
   reviewList.insertAdjacentHTML('afterbegin', createMarkup(await getReviews()));
 }
 
-new Swiper('.swiper', {
-  spaceBetween: 16,
-});
-
+getReviews();
 // const slide = document.querySelector('.swiper').swiper;
 
 // Now you can use all slider methods like
