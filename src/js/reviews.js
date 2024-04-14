@@ -8,27 +8,27 @@ import { getSwiper } from './swiper';
 
 // import { Navigation, Keyboard } from 'swiper/modules';
 
-// const swiper = new Swiper('.swiper-container', {
-//   modules: [Navigation],
-//   breakpoints: {
-//     320: {
-//       slidesPerView: 1,
-//     },
-//     768: {
-//       slidesPerView: 2,
-//       spaceBetween: 16,
-//     },
-//     1440: {
-//       slidesPerView: 4,
-//       spaceBetween: 16,
-//     },
-//   },
-//   navigation: {
-//     nextEl: '.nextBtn',
-//     prevEl: '.prevBtn',
-//     disabledClass: 'swiper-button-disabled',
-//   },
-// });
+new Swiper('.swiper', {
+  breakpoints: {
+    375: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 16,
+    },
+    1440: {
+      slidesPerView: 4,
+      grabCursor: true,
+      spaceBetween: 18,
+    },
+  },
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
 // API
 
 function createMarkup(arr) {
@@ -57,10 +57,27 @@ async function renderPage() {
   reviewList.insertAdjacentHTML('afterbegin', createMarkup(await getReviews()));
 }
 
-getSwiper({
-  spaceBetween: 16,
-});
-
+getSwiper(),{
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      375: {
+        slidesPerView: 1,
+      },
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 16,
+      },
+      1440: {
+        slidesPerView: 4,
+        grabCursor: true,
+        spaceBetween: 18,
+      },
+    },
+  };
 // const slide = document.querySelector('.swiper').swiper;
 
 // Now you can use all slider methods like
@@ -68,40 +85,38 @@ getSwiper({
 
 // ==========================================================
 
-// const reviewsSwiper = new Swiper('.reviews-swiper', {
-//   modules: [Navigation, Keyboard],
-//   speed: 800,
-//   grabCursor: true,
-//   allowTouchMove: true,
-//   direction: 'horizontal',
-//   watchOverflow: true,
-//   spaceBetween: 16,
+const reviewsSwiper = new Swiper('.swiper', {
+  speed: 800,
+  grabCursor: true,
+  direction: 'horizontal',
+  watchOverflow: false,
+  spaceBetween: 16,
 
-//   navigation: {
-//     nextEl: '.next-review-btn',
-//     prevEl: '.prev-review-btn',
-//   },
+  navigation: {
+    nextEl: '.next-review-btn',
+    prevEl: '.prev-review-btn',
+  },
 
-//   keyboard: {
-//     enabled: true,
-//     onlyInViewport: true,
-//     pageUpDown: true,
-//   },
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+    pageUpDown: true,
+  },
 
-//   breakpoints: {
-//     320: {
-//       slidesPerGroup: 1,
-//       slidesPerView: 1,
-//     },
-//     768: {
-//       slidesPerGroup: 2,
-//       slidesPerView: 2,
-//     },
-//     1440: {
-//       slidesPerGroup: 4,
-//       slidesPerView: 4,
-//     },
-//   },
-// });
+  breakpoints: {
+    320: {
+      slidesPerGroup: 1,
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerGroup: 2,
+      slidesPerView: 2,
+    },
+    1440: {
+      slidesPerGroup: 4,
+      slidesPerView: 4,
+    },
+  },
+});
 
 // =======================================================
