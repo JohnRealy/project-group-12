@@ -72,6 +72,7 @@
     height: 55px;
     background: var(--accent);
     border-radius: 60px;
+    border: none;
   }
 
   .order-btn-text {
@@ -156,6 +157,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 150px;
+  border: none;
 }
 
 .order-btn-text {
