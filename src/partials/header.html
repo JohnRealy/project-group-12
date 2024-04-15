@@ -2,14 +2,19 @@
   <div class="container header-container">
     <!-- logo -->
     <div class="logo-container">
-      <a href="./index.html" class="logo-link">
+      <a href="#" class="logo-link">
         <div class="logo-image">
-          <img src="../img/header/logo.png" alt="Site Logo" width="80px" height="80px" />
+          <img
+            src="./img/header/logo.png"
+            alt="Site Logo"
+            width="80px"
+            height="80px"
+          />
         </div>
         <p class="logo-text">jefferson*</p>
       </a>
-    </div>  
-      <button id="main-modal-menu-open" class="menu-btn" hidden>Menu</button>
+    </div>
+    <button id="main-modal-menu-open" class="menu-btn" hidden>Menu</button>
     <!-- order button (tablet and desktop) -->
     <button class="order-btn" hidden>
       <a href="#footer" class="order-btn-text">Order the project</a>
@@ -17,48 +22,47 @@
 
     <!-- button burger (mobile) -->
     <button
-    class="burger-btn"
-    id="mobile-menu-open"
-    aria-label="Mobile Menu Open"
+      class="burger-btn"
+      id="mobile-menu-open"
+      aria-label="Mobile Menu Open"
     >
       <svg class="burger-btn-svg" height="28" width="28">
         <use href="./img/icons.svg#icon-burger"></use>
       </svg>
     </button>
 
-<!-- mobile-modal-menu -->
+    <!-- mobile-modal-menu -->
 
-   <div id="mobile-menu-id" class="mobile-menu">
-        <button
+    <div id="mobile-menu-id" class="mobile-menu">
+      <button
         id="mobile-menu-close"
         class="mobile-menu-close-btn"
         aria-label="Mobile Menu Close"
-        > 
-          <svg class="icon-close" height="28" width="28">
-            <use href="./img/icons.svg#icon-close"></use>
-          </svg>
-        </button>
+      >
+        <svg class="icon-close" height="28" width="28">
+          <use href="./img/icons.svg#icon-close"></use>
+        </svg>
+      </button>
       <nav class="mobile-menu-nav">
         <ul class="mobile-menu-nav-list">
           <li class="mobile-menu-nav-list-item">
-            <a href="#aboutme">About me</a>
+            <a href="#about-me">About me</a>
           </li>
           <li class="mobile-menu-nav-list-item">
             <a href="#benefits">Benefits</a>
           </li>
           <li class="mobile-menu-nav-list-item">
-            <a href="#project">Projects</a>
+            <a href="#projects">Projects</a>
           </li>
           <li class="mobile-menu-nav-list-item">
-            <a href="#fag">FAQ</a>
+            <a href="#faq">FAQ</a>
           </li>
-      </ul>
+        </ul>
       </nav>
       <button class="order-btn2">
         <a href="#footer" class="order-btn-text">Order the project</a>
       </button>
-   </div>
-
+    </div>
   </div>
 
   <!-- tablet+desktop-modal-menu -->
@@ -66,7 +70,7 @@
     <nav class="main-modal-nav">
       <ul class="main-modal-list">
         <li class="main-modal-list-item">
-          <a href="#aboutme">About me</a>
+          <a href="#about-me">About me</a>
         </li>
         <li class="main-modal-list-item">
           <a href="#benefits">Benefits</a>
@@ -81,5 +85,3 @@
     </nav>
   </div>
 </header>
-
-<script src="../js/mobile-menu.js"></script>
