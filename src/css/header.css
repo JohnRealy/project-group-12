@@ -37,10 +37,12 @@
 
 /* ===================BREAKS======================= */
 
-/* @media screen and (max-width: 374px) {
-} */
+@media screen and (min-width: 374px) {
+ 
+}
 
 @media screen and (min-width: 768px) {
+
   .logo-container {
     max-width: 1376px;
   }
@@ -130,10 +132,6 @@
   stroke: white;
 }
 
-.mobile-menu-nav {
-  
-}
-
 .mobile-menu-nav-list {
   text-decoration: underline;
     font-family: var(--font);
@@ -169,6 +167,44 @@
   color: var(--text);
   font-size: 16px;
   white-space: nowrap;
+}
+
+/* =====================MAIN MODAL MENU=========================== */
+
+.main-modal-menu {
+  z-index: 100;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: -30px;
+  transition-property: transform, opacity, visibility;
+  transition-duration: .15s;
+  transition-timing-function: ease-in-out;
+  transform: translateY(-58%);
+  animation: slide-down 0.5s ease;
+  opacity: 0%;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.main-modal-list {
+  font-family: var(--font);
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+/* =================================================================== */
+
+.is-open2 {
+  transform: translateY(0);
+  visibility: visible;
+  opacity: 100%;
+  pointer-events: auto;
 }
 
 .is-open {
