@@ -50,6 +50,7 @@
   .hero-social {
     justify-content: flex-end;
     gap: 10px;
+    margin-right: 32px;
   }
 
   .hero-soc-item {

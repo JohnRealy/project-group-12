@@ -177,7 +177,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: -30px;
   transition-property: transform, opacity, visibility;
   transition-duration: .15s;
   transition-timing-function: ease-in-out;
