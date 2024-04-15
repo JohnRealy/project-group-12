@@ -82,10 +82,20 @@ body {
   background: transparent;
 }
 
-.swiper-button-prev svg {
+.swiper-button-prev svg,
+.swiper-button-next svg {
   width: 24px;
   height: 24px;
   stroke: rgb(250, 250, 250);
+  fill: none;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  position: relative;
+  padding: 12px;
+  width: auto;
+  height: auto;
 }
 
 .swiper-container {
@@ -110,9 +120,4 @@ body {
 .swiper-button-prev::after,
 .swiper-button-next:after {
   display: none;
-}
-
-.swiper-button-next,
-.swiper-button-prev {
-  position: relative;
 }
