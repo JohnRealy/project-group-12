@@ -1,15 +1,3 @@
-.section {
-}
-
-.about-me-section {
-}
-
-.container {
-}
-
-.about-me-container {
-}
-
 .abm-info-sec {
   display: flex;
   flex-direction: column;
@@ -132,14 +120,6 @@
   cursor: default;
 }
 
-.arrow {
-  /* position: absolute;
-    top : 5px;
-left: 310px;
-    fill: #FFF; */
-}
-.ac .ac-trigger-about::after {
-}
 
 .ac .ac-trigger-about:focus {
   color: var(--border);
@@ -193,21 +173,21 @@ left: 310px;
 }
 /* Swiper */
 
-.swiper {
+.swiper-about {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 343px;
 }
 
-.swiper-wrapper {
+.swiper-wrapper-about{
   display: flex;
   margin-right: 30px;
   overflow: hidden;
   width: 260px;
 }
 
-.active {
+.active-slide-about {
 background-color: var(--accent);
 border: 1px solid rgb(0, 0, 0);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -227,7 +207,7 @@ border: 1px solid rgb(0, 0, 0);
     
 
 }
-.swiper-slide {
+.swiper-slide-about {
 width: 130px;
   height: 130px;
       border: 1px solid var(--border);
@@ -238,12 +218,13 @@ align-items: center;
   white-space: nowrap;
   box-sizing: border-box;
 }
-.swiper-button-next {
+.swiper-button-next-about{
   border: none;
   background-color: transparent;
     width: 28px;
       height: 28px;
 margin: 0;
+
 }
 
 .arrow-swiper-about {
@@ -262,21 +243,21 @@ margin: 0;
 
 
 @media screen and (max-width: 373.99px) {
-  .swiper {
+  .swiper-about {
     display: flex;
     justify-content: start;
     align-items: center;
     width: 305px;
   }
 
-  .swiper-wrapper {
+  .swiper-wrapper-about {
     display: flex;
     margin-right: 45px;
     overflow: hidden;
     width: 200px;
   }
 
-  .swiper-slide {
+  .swiper-slide-about {
     width: 100px;
     height: 100px;
   }
@@ -364,21 +345,20 @@ margin-bottom: 64px;
 
 
 /* Swiper */
-.swiper {
+.swiper-about {
   width: 704px;
 }
 
-.swiper-wrapper {
+.swiper-wrapper-about {
   width: 600px;
   margin-right: 54px;
 }
 
-.swiper-slide {
+.swiper-slide-about {
   width: 200px;
   height: 200px;
 }
 
-.active {}
 
 .swiper-text {
   font-size: 20px;
@@ -387,7 +367,7 @@ margin-bottom: 64px;
     width: 200px;
 }
 
-.swiper-button-next {
+.swiper-button-next-about {
   width: 40px;
   height: 40px;
 }
@@ -409,12 +389,7 @@ margin-bottom: 64px;
 
 /* Desktop */
 @media screen and (min-width: 1159px) {
-  .section{
 
-  }
-  .container{
-
-  }
   .abm-photo-cont{
     width: 680px;
     height: 700px;
@@ -442,12 +417,7 @@ margin-bottom: 64px;
       bottom: 396px;
   }
 
-  .abm-info-sec {
-    /* margin-bottom: 20px;
-    display: flex;
-      flex-direction: row;
-      gap: 16px; */
-  }
+
 
   .accordion-about-container {
     max-width: 704px;
@@ -462,12 +432,6 @@ margin-bottom: 64px;
     letter-spacing: -0.02em;
   }
 
-.abm-info-sec-list{
-/* display: flex;
-flex-direction: row;
-flex-wrap: wrap; */
-
-}
 
 .accordion-about-container {
   max-width: 1440px;
@@ -510,18 +474,18 @@ width: 1376px;
 }
 
 /* swiper */
-.swiper {
+.swiper-about {
 width: 1312px;
 height: 200px;
 margin-left: 32px;
 }
 
-.swiper-wrapper {
+.swiper-wrapper-about {
   width: 1200px;
   margin-right: 72px;
 }
 
-.swiper-slide {
+.swiper-slide-about {
   width: 200px;
   height: 200px;
 }
@@ -533,7 +497,7 @@ margin-left: 32px;
   width: 200px;
 }
 
-.swiper-button-next {
+.swiper-button-next-about {
   width: 40px;
   height: 40px;
 }
