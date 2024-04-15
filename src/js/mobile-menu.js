@@ -57,7 +57,8 @@ function remove() {
 document.addEventListener('click', event => {
   if (
     !mainMenu.contains(event.target) &&
-    !mainModalMenuOpenButton.contains(event.target)
+    !mainModalMenuOpenButton.contains(event.target) &&
+    !menu.contains(event.target)
   ) {
     console.log('clicked outside menu');
     remove();
