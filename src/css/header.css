@@ -214,3 +214,9 @@
   opacity: 100%;
   pointer-events: auto;
 }
+
+.content-covers {
+  background-image: url(../img/hero/hero-background.png);
+  background-repeat: no-repeat;
+  background-position: center;
+}
