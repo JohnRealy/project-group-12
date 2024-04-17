@@ -1,5 +1,3 @@
-// ==================== / import modules / ====================
-
 import axios from 'axios';
 
 // ==================== / postComment function / ====================
@@ -21,45 +19,6 @@ export async function postComment(email, comment) {
   }
 }
 
-// const response = postComment('test@gmail.com', 'Hello!');
-// console.log(response);
-
-// ==================== / postComents example / ====================
-
-// import iziToast from 'izitoast';
-// import { postComment } from './api';
-
-// const formFooter = document.querySelector('form');
-// formFooter.addEventListener('submit', onSubmit);
-
-// async function onSubmit(evt) {
-//   evt.preventDefault();
-
-//   const inputEmail = evt.target['email'].value.trim();
-//   const inputMessage = evt.target['message'].value.trim();
-
-//   if (inputEmail.length == 0 || inputMessage.length == 0) {
-//     iziToast.info({
-//       message:
-//         'Please add your comment more than 7 characters and enter a valid email.',
-//       position: 'topLeft',
-//     });
-//     return;
-//     //   ------------------------------------------
-//   } else {
-//     try {
-//       await postComment(inputEmail, inputMessage);
-//       iziToast.info({
-//         message: 'Thank you for your comment!)',
-//         position: 'topRight',
-//       });
-//       //   ------------------------------------------
-//     } catch (error) {
-//       console.log(error);
-//     }
-//   }
-// }
-
 // ==================== / getReviews function / ====================
 
 export async function getReviews() {
@@ -72,7 +31,6 @@ export async function getReviews() {
     return err;
   }
 }
-
 // ==================== / getReviews example / ====================
 
 // import iziToast from 'izitoast';
