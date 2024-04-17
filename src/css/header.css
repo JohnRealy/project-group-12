@@ -1,21 +1,214 @@
 .header {
-  padding: 20px 0;
+  position: absolute;
+  padding: 32px 0;
+  width: 100%;
 }
 
-.nav-list {
+.header-container {
   display: flex;
-  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* logo */
+
+.logo-link {
+  display: flex;
+  gap: 8px;
+  align-items: top;
+}
+
+.logo-text {
+  color: var(--text);
+  font-family: var(--font);
+}
+
+.burger-btn {
+  display: flex;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+}
+
+.burger-btn-svg {
+  justify-content: end;
+  stroke: white;
+}
+
+/* ===================BREAKS======================= */
+
+@media screen and (min-width: 374px) {
+ 
+}
+
+@media screen and (min-width: 768px) {
+
+  .logo-container {
+    max-width: 1376px;
+  }
+
+  .menu-btn {
+    display: flex;
+    padding-top: 10px;
+    background-color: transparent;
+    border: none;
+    color: var(--text);
+    font-family: var(--font);
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    text-decoration-line: underline;
+  }
+
+  .order-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px 24px;
+    width: 163px;
+    height: 55px;
+    background: var(--accent);
+    border-radius: 60px;
+  }
+
+  .order-btn-text {
+    font-family: var(--font);
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: -0.02em;
+    color: var(--text);
+    font-size: 16px;
+    white-space: nowrap;
+  }
+
+  .burger-btn {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .header-container {
+    max-width: 1376px;
+  }
+}
+
+/* ===================mobile-menu======================== */
+
+.mobile-menu {
+  position: fixed;
+  z-index: 100;
+  background-color: var(--background);
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition-property: transform, opacity, visibility;
+  transition-duration: .15s;
+  transition-timing-function: ease-in-out;
+  transform: translate(100%);
+  opacity: 0%;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.mobile-menu-close-btn {
+  display: flex;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  margin: 32px 16px;
   justify-content: flex-end;
-  gap: 40px;
 }
 
-.nav-link {
+.icon-close {
+  justify-content: end;
+  stroke: white;
+}
+
+.mobile-menu-nav-list {
+  text-decoration: underline;
+    font-family: var(--font);
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
+
+.order-btn2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 18px 24px;
+  width: 163px;
+  height: 55px;
+  background: var(--accent);
+  border-radius: 60px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 150px;
+}
+
+.order-btn-text {
+  font-family: var(--font);
+  font-style: normal;
   font-weight: 500;
-  letter-spacing: 0.02em;
-  line-height: 1.5;
+  line-height: 19px;
+  letter-spacing: -0.02em;
+  color: var(--text);
+  font-size: 16px;
+  white-space: nowrap;
 }
 
-.nav-link:hover,
-.nav-link:focus {
-  color: #747bff;
+/* =====================MAIN MODAL MENU=========================== */
+
+.main-modal-menu {
+  z-index: 100;
+  background-color: transparent;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition-property: transform, opacity, visibility;
+  transition-duration: .15s;
+  transition-timing-function: ease-in-out;
+  transform: translateY(-58%);
+  animation: slide-down 0.5s ease;
+  opacity: 0%;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.main-modal-list {
+  font-family: var(--font);
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+/* =================================================================== */
+
+.is-open2 {
+  transform: translateY(0);
+  visibility: visible;
+  opacity: 100%;
+  pointer-events: auto;
+}
+
+.is-open {
+  transform: translateX(0);
+  visibility: visible;
+  opacity: 100%;
+  pointer-events: auto;
 }
