@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .abm-title-container {
@@ -39,12 +39,12 @@
 .abm-photo-cont {
   margin-bottom: 32px;
 }
-.abm-photo{
+.abm-photo {
   border-radius: 24px;
 }
 /* accordion */
 
-.accordion-about-container{
+.accordion-about-container {
   max-width: 343px;
   margin-bottom: 32px;
 }
@@ -187,40 +187,43 @@
   width: 260px;
 }
 
+
 .active-slide-about {
 background-color: var(--accent);
 border: 1px solid rgb(0, 0, 0);
+}
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-
 }
-.swiper-text{
+.swiper-text {
   color: var(--text);
-    font-family: sans-serif "Inter Tight";
-    font-size: 16px;
-      font-weight: 500;
-      line-height: 24px;
-    letter-spacing: -0.02em;
-    text-align: left;
-    width: 130px;
-    display: flex;
-    justify-content: center;
-    
-
-}
-.swiper-slide-about {
-width: 130px;
-  height: 130px;
-      border: 1px solid var(--border);
-      border-radius: 50%;
+  font-family: sans-serif 'Inter Tight';
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  text-align: left;
+  width: 130px;
   display: flex;
   justify-content: center;
-align-items: center;
+}
+
+.swiper-slide-about {
+width: 130px;
+}
+
+  height: 130px;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   white-space: nowrap;
   box-sizing: border-box;
 }
 .swiper-button-next-about{
   border: none;
   background-color: transparent;
+
     width: 28px;
       height: 28px;
 margin: 0;
@@ -230,17 +233,9 @@ margin: 0;
 .arrow-swiper-about {
   width: 28px;
   height: 28px;
-  fill: var(--border);
-  
+  stroke: #808080;
+  fill: none;
 }
-
-
-
-
-
-
-
-
 
 @media screen and (max-width: 373.99px) {
   .swiper-about {
@@ -261,9 +256,7 @@ margin: 0;
     width: 100px;
     height: 100px;
   }
-
 }
-
 
 /* Photo */
 /* Mobile photo */
@@ -273,9 +266,9 @@ margin: 0;
     height: 500px;
     object-fit: cover;
   }
-  .abm-photo-cont{
-  width: 343px;
-  height: 500px;
+  .abm-photo-cont {
+    width: 343px;
+    height: 500px;
   }
 }
 
@@ -285,7 +278,7 @@ margin: 0;
     width: 704px;
     height: 700px;
   }
-  .abm-photo-cont{
+  .abm-photo-cont {
     width: 704px;
     height: 700px;
   }
@@ -297,24 +290,21 @@ margin: 0;
     width: 680px;
     height: 700px;
   }
-  .abm-photo-cont{
-width: 680px;
-  height: 700px;
-  
+  .abm-photo-cont {
+    width: 680px;
+    height: 700px;
   }
 }
 
-
-
 /* Tablet */
 @media screen and (min-width: 768px) {
-.abm-title-container{
-max-width: 704px;
-height: 700px;
-position: relative;
-}
-.abm-title{
-  position: absolute;
+  .abm-title-container {
+    max-width: 704px;
+    height: 700px;
+    position: relative;
+  }
+  .abm-title {
+    position: absolute;
     max-width: 576px;
     height: 240px;
     left: 64px;
@@ -322,26 +312,26 @@ position: relative;
     top: 64px;
     bottom: 396px;
     font-size: 38px;
-      font-weight: 500;
-      line-height: 40px;
-      letter-spacing: -0.03em;
-}
-.abm-info-sec{
-  margin-bottom: 20px;
-}
+    font-weight: 500;
+    line-height: 40px;
+    letter-spacing: -0.03em;
+  }
+  .abm-info-sec {
+    margin-bottom: 20px;
+  }
 
-.accordion-about-container{
-max-width: 704px;
-margin-bottom: 64px;
-}
-.ac-text-about{
-  max-width: 704px;
-  color: var(--text);
+  .accordion-about-container {
+    max-width: 704px;
+    margin-bottom: 64px;
+  }
+  .ac-text-about {
+    max-width: 704px;
+    color: var(--text);
     font-size: 16px;
     font-weight: 500;
     line-height: 24px;
     letter-spacing: -0.02em;
-}
+  }
 
 
 /* Swiper */
@@ -358,10 +348,10 @@ margin-bottom: 64px;
   width: 200px;
   height: 200px;
 }
+}
 
-
-.swiper-text {
-  font-size: 20px;
+  .swiper-text {
+    font-size: 20px;
     font-weight: 500;
     line-height: 24px;
     width: 200px;
@@ -372,33 +362,34 @@ margin-bottom: 64px;
   height: 40px;
 }
 
-.arrow-swiper-about {
+ 
+
+
+  .swiper-button-next {
     width: 40px;
     height: 40px;
-}
-
-
-
   }
 
-
-
-
-
-
+  .arrow-swiper-about {
+    width: 40px;
+    height: 40px;
+  }
+}
 
 /* Desktop */
 @media screen and (min-width: 1159px) {
 
+
   .abm-photo-cont{
+
     width: 680px;
     height: 700px;
   }
-  .abm-photo{
+  .abm-photo {
     width: 680px;
     height: 700px;
   }
-.abm-title-container {
+  .abm-title-container {
     max-width: 680px;
     height: 700px;
     position: relative;
@@ -410,11 +401,11 @@ margin-bottom: 64px;
   .abm-title {
     position: absolute;
     width: 552px;
-      height: 240px;
-      left: 64px;
-      right: 64px;
-      top: 64px;
-      bottom: 396px;
+    height: 240px;
+    left: 64px;
+    right: 64px;
+    top: 64px;
+    bottom: 396px;
   }
 
 
@@ -433,6 +424,7 @@ margin-bottom: 64px;
   }
 
 
+
 .accordion-about-container {
   max-width: 1440px;
 }
@@ -448,30 +440,30 @@ margin-bottom: 64px;
     line-height: 24px;
     letter-spacing: -0.02em;
     text-align: left;
-}
-.abm-info-sec{
-display: flex;
-  flex-direction: column;
-  gap: 16px;
-  margin-bottom: 20px;
-}
-.abm-title-container{
-  width: 680px;
+  }
+  .abm-info-sec {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 20px;
+  }
+  .abm-title-container {
+    width: 680px;
+  }
+  .abm-info-sec-list {
+    display: flex;
+    gap: 16px;
+  }
+  .ac-about {
+    width: 1376px;
+  }
+  .container {
+    width: 1440px;
+  }
+  .ac-header-about {
+    height: 72px;
+  }
 
-}
-.abm-info-sec-list{
-  display: flex;
-  gap: 16px;
-}
-.ac-about{
-width: 1376px;
-}
-.container {
-  width: 1440px;
-}
-.ac-header-about{
-  height: 72px;
-}
 
 /* swiper */
 .swiper-about {
@@ -490,20 +482,21 @@ margin-left: 32px;
   height: 200px;
 }
 
-.swiper-text {
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 24px;
-  width: 200px;
-}
+  .swiper-text {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    width: 200px;
+  }
+
 
 .swiper-button-next-about {
   width: 40px;
   height: 40px;
 }
 
-.arrow-swiper-about {
-  width: 40px;
-  height: 40px;
-}
+  .arrow-swiper-about {
+    width: 40px;
+    height: 40px;
+  }
 }
