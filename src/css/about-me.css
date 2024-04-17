@@ -1,15 +1,3 @@
-.section {
-}
-
-.about-me-section {
-}
-
-.container {
-}
-
-.about-me-container {
-}
-
 .abm-info-sec {
   display: flex;
   flex-direction: column;
@@ -132,15 +120,6 @@
   cursor: default;
 }
 
-.arrow {
-  /* position: absolute;
-    top : 5px;
-left: 310px;
-    fill: #FFF; */
-}
-.ac .ac-trigger-about::after {
-}
-
 .ac .ac-trigger-about:focus {
   color: var(--border);
 }
@@ -193,21 +172,21 @@ left: 310px;
 }
 /* Swiper */
 
-.swiper {
+.swiper-about {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 343px;
 }
 
-.swiper-wrapper {
+.swiper-wrapper-about {
   display: flex;
   margin-right: 30px;
   overflow: hidden;
   width: 260px;
 }
 
-.active {
+.active-slide-about {
   background-color: var(--accent);
   border: 1px solid rgb(0, 0, 0);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
@@ -224,7 +203,8 @@ left: 310px;
   display: flex;
   justify-content: center;
 }
-.swiper-slide {
+
+.swiper-slide-about {
   width: 130px;
   height: 130px;
   border: 1px solid var(--border);
@@ -235,9 +215,10 @@ left: 310px;
   white-space: nowrap;
   box-sizing: border-box;
 }
-.swiper-button-next {
+.swiper-button-next-about {
   border: none;
   background-color: transparent;
+
   width: 28px;
   height: 28px;
   margin: 0;
@@ -251,21 +232,21 @@ left: 310px;
 }
 
 @media screen and (max-width: 373.99px) {
-  .swiper {
+  .swiper-about {
     display: flex;
     justify-content: start;
     align-items: center;
     width: 305px;
   }
 
-  .swiper-wrapper {
+  .swiper-wrapper-about {
     display: flex;
     margin-right: 45px;
     overflow: hidden;
     width: 200px;
   }
 
-  .swiper-slide {
+  .swiper-slide-about {
     width: 100px;
     height: 100px;
   }
@@ -347,47 +328,45 @@ left: 310px;
   }
 
   /* Swiper */
-  .swiper {
+  .swiper-about {
     width: 704px;
   }
 
-  .swiper-wrapper {
+  .swiper-wrapper-about {
     width: 600px;
     margin-right: 54px;
   }
 
-  .swiper-slide {
+  .swiper-slide-about {
     width: 200px;
     height: 200px;
   }
+}
 
-  .active {
-  }
+.swiper-text {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  width: 200px;
+}
 
-  .swiper-text {
-    font-size: 20px;
-    font-weight: 500;
-    line-height: 24px;
-    width: 200px;
-  }
+.swiper-button-next-about {
+  width: 40px;
+  height: 40px;
+}
 
-  .swiper-button-next {
-    width: 40px;
-    height: 40px;
-  }
+.swiper-button-next {
+  width: 40px;
+  height: 40px;
+}
 
-  .arrow-swiper-about {
-    width: 40px;
-    height: 40px;
-  }
+.arrow-swiper-about {
+  width: 40px;
+  height: 40px;
 }
 
 /* Desktop */
-@media screen and (min-width: 1159px) {
-  .section {
-  }
-  .container {
-  }
+@media screen and (min-width: 1440px) {
   .abm-photo-cont {
     width: 680px;
     height: 700px;
@@ -415,13 +394,6 @@ left: 310px;
     bottom: 396px;
   }
 
-  .abm-info-sec {
-    /* margin-bottom: 20px;
-    display: flex;
-      flex-direction: row;
-      gap: 16px; */
-  }
-
   .accordion-about-container {
     max-width: 704px;
   }
@@ -433,12 +405,6 @@ left: 310px;
     font-weight: 500;
     line-height: 24px;
     letter-spacing: -0.02em;
-  }
-
-  .abm-info-sec-list {
-    /* display: flex;
-flex-direction: row;
-flex-wrap: wrap; */
   }
 
   .accordion-about-container {
@@ -481,18 +447,18 @@ flex-wrap: wrap; */
   }
 
   /* swiper */
-  .swiper {
+  .swiper-about {
     width: 1312px;
     height: 200px;
     margin-left: 32px;
   }
 
-  .swiper-wrapper {
+  .swiper-wrapper-about {
     width: 1200px;
     margin-right: 72px;
   }
 
-  .swiper-slide {
+  .swiper-slide-about {
     width: 200px;
     height: 200px;
   }
@@ -504,7 +470,7 @@ flex-wrap: wrap; */
     width: 200px;
   }
 
-  .swiper-button-next {
+  .swiper-button-next-about {
     width: 40px;
     height: 40px;
   }
