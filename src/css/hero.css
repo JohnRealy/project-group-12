@@ -1,8 +1,20 @@
 /* .hero {
-}
+} */
 
 .hero-container {
-} */
+  background-image: url(../img/hero/hero-background.png);
+  background-repeat: no-repeat;
+  background-position: left;
+
+  background-size: cover;
+  padding-bottom: 32px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .hero-container {
+    background-image: url(../img/hero/hero-background-2x.png);
+  }
+}
 
 .hero-text {
   padding-top: 249px;
