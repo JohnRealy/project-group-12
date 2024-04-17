@@ -53,13 +53,8 @@ function modal() {
 // ===============================================================
 function markupModal(obj) {
   const { title, message } = obj;
-  const messageModal = ` <button type="button" class="modal-close-btn" data-modal-close>
-            <svg class="modal-icon-close" >
-                <use href="./img/icons.svg#icon-close"></use>
-            </svg>
-        </button>
+  const messageModal = `
         <h2 class="modal-title">${title}</h2>
         <p class="modal-text">${message}</p>`;
-
-  refs.elementModal.innerHTML = messageModal;
+  refs.elementModal.insertAdjacentHTML('beforeend', messageModal);
 }
