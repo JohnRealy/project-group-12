@@ -1,7 +1,3 @@
-.projects-section {
-  padding: 32px 16px;
-}
-
 .projects–title {
   color: rgba(250, 250, 250, 0.4);
   font-family: 'Inter Tight', sans-serif;
@@ -97,30 +93,30 @@
 }
 
 .projects-prev-btn {
-    border: 1px solid rgba(250, 250, 250, 0.5);
-    border-radius: 60px;
-    padding: 14px;
-    width: 52px;
-    height: 52px;
-    background-color: transparent;
-    /* transform: rotate(-180deg); */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    opacity: 0.5;
-    cursor: not-allowed;
+  border: 1px solid rgba(250, 250, 250, 0.5);
+  border-radius: 60px;
+  padding: 14px;
+  width: 52px;
+  height: 52px;
+  background-color: transparent;
+  /* transform: rotate(-180deg); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 .projects-next-btn {
-    border: 1px solid rgba(250, 250, 250, 0.5);
-    border-radius: 60px;
-    padding: 14px;
-    width: 52px;
-    height: 52px;
-    background-color: transparent;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  border: 1px solid rgba(250, 250, 250, 0.5);
+  border-radius: 60px;
+  padding: 14px;
+  width: 52px;
+  height: 52px;
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* .projects-prev-btn {
@@ -140,11 +136,6 @@
 
 /* ---TABLET--- */
 @media screen and (min-width: 768px) {
-  .projects-section {
-    max-width: 768px;
-    padding: 48px 32px;
-  }
-
   /* .swiper {
     max-width: 704px;
     height: 1191px;
@@ -193,7 +184,7 @@
     width: 68px;
     height: 68px;
   }
-  
+
   .projects-next-btn {
     width: 68px;
     height: 68px;
@@ -202,18 +193,13 @@
 
 /* ---DESKTOP--- */
 @media screen and (min-width: 1440px) {
-  .projects-section {
-    max-width: 1440px;
-    padding: 82px 32px;
-  }
-
   /* .swiper {
     border-radius: 24px;
     max-width: 1376px;
     height: 625px;
   } */
 
-  .projects-item {
+  .swiper-slide.projects-item {
     max-width: 1376px;
     display: flex;
   }
