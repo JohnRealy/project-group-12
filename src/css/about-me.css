@@ -240,10 +240,10 @@
   }
 
   .swiper-wrapper-about {
-    display: flex;
+    /* display: flex;
     margin-right: 45px;
     overflow: hidden;
-    width: 200px;
+    width: 200px; */
   }
 
   .swiper-slide-about {
