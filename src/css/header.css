@@ -4,6 +4,22 @@
   width: 100%;
 }
 
+.section.hero {
+  padding-top: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .section.hero {
+    padding-top: 0px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .section.hero {
+    padding-top: 0px;
+  }
+}
+
 .header-container {
   display: flex;
   flex-direction: row;
@@ -38,11 +54,9 @@
 /* ===================BREAKS======================= */
 
 @media screen and (min-width: 374px) {
- 
 }
 
 @media screen and (min-width: 768px) {
-
   .logo-container {
     max-width: 1376px;
   }
@@ -110,7 +124,7 @@
   flex-direction: column;
   justify-content: space-between;
   transition-property: transform, opacity, visibility;
-  transition-duration: .15s;
+  transition-duration: 0.15s;
   transition-timing-function: ease-in-out;
   transform: translate(100%);
   opacity: 0%;
@@ -134,15 +148,14 @@
 
 .mobile-menu-nav-list {
   text-decoration: underline;
-    font-family: var(--font);
-    color: var(--text);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 12px;
+  font-family: var(--font);
+  color: var(--text);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
 }
-
 
 .order-btn2 {
   display: flex;
@@ -178,7 +191,7 @@
   flex-direction: column;
   justify-content: center;
   transition-property: transform, opacity, visibility;
-  transition-duration: .15s;
+  transition-duration: 0.15s;
   transition-timing-function: ease-in-out;
   transform: translateY(-58%);
   animation: slide-down 0.5s ease;
