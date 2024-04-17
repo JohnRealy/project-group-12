@@ -366,7 +366,7 @@
 }
 
 /* Desktop */
-@media screen and (min-width: 1159px) {
+@media screen and (min-width: 1440px) {
   .abm-photo-cont {
     width: 680px;
     height: 700px;
