@@ -68,10 +68,6 @@
   stroke: #fafafa;
 }
 
-.reviews-swiper {
-  width: 343px;
-}
-
 .reviews-item {
   cursor: grab;
   height: 330px !important;

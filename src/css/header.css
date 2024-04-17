@@ -120,7 +120,7 @@
   top: 0;
   right: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -170,6 +170,7 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 150px;
+  border: none;
 }
 
 .order-btn-text {
@@ -226,3 +227,4 @@
   opacity: 100%;
   pointer-events: auto;
 }
+

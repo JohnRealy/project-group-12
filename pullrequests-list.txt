@@ -13,4 +13,6 @@
 13.https://github.com/JohnRealy/project-group-12/pull/22/
 14.https://github.com/JohnRealy/project-group-12/pull/24
 15.https://github.com/JohnRealy/project-group-12/pull/23
-16.
+16.https://github.com/JohnRealy/project-group-12/pull/25
+17.https://github.com/JohnRealy/project-group-12/pull/19/
+18.
