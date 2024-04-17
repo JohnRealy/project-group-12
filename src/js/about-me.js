@@ -1,31 +1,32 @@
-import Swiper from 'swiper';
-import { Navigation } from 'swiper/modules';
-import 'swiper/css';
+const swiperBox = document.querySelector('.swiper-wrapper-about');
 
-const swiperBox = document.querySelector('.about-me-section .swiper');
-const nextButtonRev = document.querySelector('.swiper-button-next-about');
+swiperBox.addEventListener('click', onClick);
 
-console.log(swiperBox);
-
-const swiper = new Swiper(swiperBox, {
-  modules: [Navigation],
-  slidesPerView: 2,
-  loop: true,
-  keyboard: {
-    enabled: true,
-    onlyInViewport: false,
-  },
-  breakpoints: {
-    768: {
-      slidesPerView: 3,
-    },
-
-    1440: {
-      slidesPerView: 6,
-    },
-  },
-  direction: 'horizontal',
-  navigation: {
-    nextEl: '.swiper-button-next-about',
-  },
-});
+function onClick(e) {
+  const btn = e.target;
+  const activeBtn = e.currentTarget.querySelector('.active-slide-about');
+  //   console.log(e.target);
+  //   console.log(e.currentTarget);
+  if (btn.nodeName !== 'LI' && btn.nodeName !== 'P') {
+    return;
+  }
+  if (btn.dataset.type === 'page') {
+    btn.classList.toggle('active-slide-about');
+    activeBtn.classList.toggle('active-slide-about');
+    return;
+  }
+  if (btn.parentNode.dataset.type === 'page') {
+    btn.parentNode.classList.toggle('active-slide-about');
+    activeBtn.classList.toggle('active-slide-about');
+    return;
+  }
+  if (
+    btn.dataset.type === 'next'
+    //   &&
+    // activeBtn.nextElementSibling.dataset.type === 'page'
+  ) {
+    console.log('llo');
+    activeBtn.classList.toggle('active-slide-about');
+    activeBtn.nextElementSibling.classList.toggle('active-slide-about');
+  }
+}

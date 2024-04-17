@@ -4,11 +4,12 @@ const mainModalMenuOpenButton = document.getElementById('main-modal-menu-open');
 const menu = document.getElementById('mobile-menu-id');
 const menuLink = document.getElementsByClassName('mobile-menu-nav-list-item');
 const mainModalMenu = document.getElementById('main-modal-menu-id');
-const mainModalMenuLink = document.getElementsByClassName('main-modal-list-item');
+const mainModalMenuLink = document.getElementsByClassName(
+  'main-modal-list-item'
+);
 const body = document.getElementsByTagName('body');
 const mainMenu = document.querySelector('.main-modal-menu');
 const orderButtonLink = document.getElementsByClassName('order-btn-text');
-
 
 // show/hide the menu when the button or link is clicked
 for (let link of menuLink) {
@@ -73,7 +74,6 @@ document.addEventListener('click', event => {
     !mainModalMenuOpenButton.contains(event.target) &&
     !menu.contains(event.target)
   ) {
-    console.log('clicked outside menu');
     remove();
   }
 });
