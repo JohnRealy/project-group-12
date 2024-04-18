@@ -28,7 +28,6 @@ async function onSubmit(evt) {
     return;
   } else {
     const res = await postComment(inputEmail, inputMessage);
-    console.log(res);
     markupModal(res);
     body.style.overflow = 'hidden';
     body.style.zIndex = 52;
@@ -52,6 +51,8 @@ function modal() {
 
   function addModal() {
     modal.classList.add('is-hidden');
+    body.style.overflow = 'visible';
+    body.style.zIndex = 0;
   }
 }
 // ===============================================================
