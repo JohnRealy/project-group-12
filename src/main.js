@@ -5,3 +5,4 @@ import './js/footer';
 import './js/mobile-menu';
 import './js/projects';
 import './js/reviews';
+import './js/about-me';
