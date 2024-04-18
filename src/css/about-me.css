@@ -176,14 +176,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 343px;
+  max-width: 343px;
 }
 
 .swiper-wrapper-about {
   display: flex;
+  max-width: 260px;
   margin-right: 30px;
-  overflow: hidden;
-  width: 260px;
 }
 
 .active-slide-about {
@@ -191,6 +190,7 @@
   border: 1px solid rgb(0, 0, 0);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
+
 .swiper-text {
   color: var(--text);
   font-family: sans-serif 'Inter Tight';
@@ -198,30 +198,31 @@
   font-weight: 500;
   line-height: 24px;
   letter-spacing: -0.02em;
-  text-align: left;
-  width: 130px;
-  display: flex;
-  justify-content: center;
 }
 
 .swiper-slide-about {
-  width: 130px;
-  height: 130px;
+  height: 130px !important;
   border: 1px solid var(--border);
   border-radius: 50%;
-  display: flex;
-  justify-content: center;
+  /* display: flex; */
+  /* justify-content: center;
   align-items: center;
-  white-space: nowrap;
+  white-space: nowrap; */
   box-sizing: border-box;
 }
 .swiper-button-next-about {
+  display: block;
+  overflow: hidden;
   border: none;
   background-color: transparent;
 
   width: 28px;
   height: 28px;
   margin: 0;
+}
+
+.wrapper-swiper-about {
+  width: 230px;
 }
 
 .arrow-swiper-about {
@@ -231,26 +232,25 @@
   fill: none;
 }
 
-@media screen and (max-width: 373.99px) {
+/* @media screen and (max-width: 373.99px) {
   .swiper-about {
     display: flex;
     justify-content: start;
     align-items: center;
-    width: 305px;
+    max-width: 305px;
   }
 
   .swiper-wrapper-about {
     display: flex;
     margin-right: 45px;
-    overflow: hidden;
-    width: 200px;
+    max-width: 200px;
   }
 
   .swiper-slide-about {
-    width: 100px;
-    height: 100px;
+    max-width: 100px;
+    max-height: 100px;
   }
-}
+} */
 
 /* Photo */
 /* Mobile photo */
@@ -343,12 +343,12 @@
   }
 }
 
-.swiper-text {
+/* .swiper-text {
   font-size: 20px;
   font-weight: 500;
   line-height: 24px;
   width: 200px;
-}
+} */
 
 .swiper-button-next-about {
   width: 40px;
@@ -459,7 +459,7 @@
   }
 
   .swiper-slide-about {
-    width: 200px;
+    /* width: 200px; */
     height: 200px;
   }
 
@@ -467,7 +467,7 @@
     font-size: 20px;
     font-weight: 500;
     line-height: 24px;
-    width: 200px;
+    /* width: 200px; */
   }
 
   .swiper-button-next-about {
