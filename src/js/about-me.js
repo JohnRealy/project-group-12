@@ -9,8 +9,12 @@ const swiper = new Swiper('.about-me-section .swiper', {
   },
 });
 
+const list = document.querySelector('.swiper-wrapper-about');
+
 document
   .querySelector('.swiper-button-next-about')
   .addEventListener('click', stepNext);
 
-function stepNext() {}
+function stepNext() {
+  // swiper.slideNext(); // Перехід до наступної карточки
+}
