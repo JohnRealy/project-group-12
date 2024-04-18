@@ -3,6 +3,8 @@ import { postComment } from './api';
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 
+const body = document.body;
+
 const refs = {
   formFooter: document.querySelector('.js_form_footer'),
   closeModalBtn: document.querySelector('[data-modal-close]'),
@@ -28,6 +30,8 @@ async function onSubmit(evt) {
     const res = await postComment(inputEmail, inputMessage);
     console.log(res);
     markupModal(res);
+    body.style.overflow = 'hidden';
+    body.style.zIndex = 52;
     modal();
   }
 }
@@ -51,11 +55,14 @@ function modal() {
   }
 }
 // ===============================================================
+
+const closeIcon = './img/icons.svg#icon-close';
+
 function markupModal(obj) {
   const { title, message } = obj;
   const messageModal = `<button type="button" class="modal-close-btn" data-modal-close>
         <svg class="modal-icon-close">
-          <use href="./img/icons.svg#icon-close"></use>
+          <use href="${closeIcon}"></use>
         </svg>
       </button>
       <h2 class="modal-title">${title}</h2>
