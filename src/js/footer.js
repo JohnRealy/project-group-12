@@ -9,6 +9,24 @@ const refs = {
   formFooter: document.querySelector('.js_form_footer'),
   elementModal: document.querySelector('.modal'),
 };
+// ====================================================
+// let counter = 0;
+// refs.formFooter.addEventListener('input', inputForm);
+
+// function inputForm(e) {
+//   counter += 1;
+// const inputFeedback = e.currentTarget.elements.message.value.trim();
+//   if (counter > 35) {
+//    const inputFeedbackVisual = inputFeedback.slice(0, 34) + "...";
+//     console.log(counter);
+//     console.log(inputFeedbackVisual);
+//     return
+// }
+// }
+// ===================================================
+
+
+
 
 refs.formFooter.addEventListener('submit', onSubmit);
 
@@ -25,10 +43,7 @@ async function onSubmit(evt) {
     });
     return;
   } else { 
-    if (inputMessage.length > 27) {
-      inputMessage = inputMessage.slice(0, 27) + "...";
-      console.log("message...", inputMessage);
-    }
+    
     const res = await postComment(inputEmail, inputMessage);
     console.log(res);
     markupModal(res);
@@ -50,8 +65,17 @@ function modal() {
       addModal();
     }
   });
-  closeModalBtn.addEventListener('click', () => addModal());
 
+  closeModalBtn.addEventListener('click', () => addModal());
+  document.addEventListener('keydown', closeEsc);
+
+  function closeEsc(event) {
+    if (event.key === 'Escape') {
+      addModal();
+      document.removeEventListener('keydown', closeEsc);
+    }
+  };
+  
   function addModal() {
     modal.classList.add('is-hidden');
   }
