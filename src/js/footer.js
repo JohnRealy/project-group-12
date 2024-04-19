@@ -7,8 +7,6 @@ const body = document.body;
 
 const refs = {
   formFooter: document.querySelector('.js_form_footer'),
-  // closeModalBtn: document.querySelector('[data-modal-close]'),
-  // modal: document.querySelector('[data-modal]'),
   elementModal: document.querySelector('.modal'),
 };
 
