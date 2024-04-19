@@ -7,8 +7,8 @@ const body = document.body;
 
 const refs = {
   formFooter: document.querySelector('.js_form_footer'),
-  closeModalBtn: document.querySelector('[data-modal-close]'),
-  modal: document.querySelector('[data-modal]'),
+  // closeModalBtn: document.querySelector('[data-modal-close]'),
+  // modal: document.querySelector('[data-modal]'),
   elementModal: document.querySelector('.modal'),
 };
 
@@ -17,7 +17,7 @@ refs.formFooter.addEventListener('submit', onSubmit);
 async function onSubmit(evt) {
   evt.preventDefault();
   const inputEmail = evt.target.elements.email.value.trim();
-  const inputMessage = evt.target.elements.message.value.trim();
+  let inputMessage = evt.target.elements.message.value.trim();
 
   if (inputEmail.length === 0 || inputMessage.length === 0) {
     console.log('input filds');
@@ -26,7 +26,11 @@ async function onSubmit(evt) {
       message: 'INPUT EMAIL E MESSAGE',
     });
     return;
-  } else {
+  } else { 
+    if (inputMessage.length > 27) {
+      inputMessage = inputMessage.slice(0, 27) + "...";
+      console.log("message...", inputMessage);
+    }
     const res = await postComment(inputEmail, inputMessage);
     console.log(res);
     markupModal(res);
@@ -56,13 +60,13 @@ function modal() {
 }
 // ===============================================================
 
-const closeIcon = './img/icons.svg#icon-close';
+const closeIcon = "./img/icons.svg#icon-close";
 
 function markupModal(obj) {
   const { title, message } = obj;
   const messageModal = `<button type="button" class="modal-close-btn" data-modal-close>
         <svg class="modal-icon-close">
-          <use href="${closeIcon}"></use>
+          <use href=${closeIcon}></use>
         </svg>
       </button>
       <h2 class="modal-title">${title}</h2>
