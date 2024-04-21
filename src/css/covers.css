@@ -30,11 +30,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  /* animation-name: marqueeLine;
+  animation-duration: 9s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite; */
+}
+
+.animation {
   animation-name: marqueeLine;
   animation-duration: 9s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
+
 
 
 
