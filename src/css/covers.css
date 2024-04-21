@@ -36,6 +36,8 @@
   animation-iteration-count: infinite;
 }
 
+
+
 @keyframes marqueeLine {
   0% {
     transform: translateX(70%);
@@ -51,6 +53,7 @@
 .covers-image {
   min-width: 282px;
 }
+
 
 @media screen and (min-width: 768px) {
   .content-covers {
