@@ -1,11 +1,61 @@
-// ================ / html example / =========================
 import Swiper from 'swiper';
+import { Navigation, Keyboard, Mousewheel } from 'swiper/modules';
 
-// ================ / html example / ================
+const btnNext = document.querySelector('.swiper-button-next');
+const btnPrev = document.querySelector('.swiper-button-prev');
 
-export function getSwiper(params) {
-  new Swiper('.swiper', params);
+const parameters = {
+  modules: [Navigation, Keyboard, Mousewheel],
+  navigation: {
+    nextEl: btnNext,
+    prevEl: btnPrev,
+  },
+  mousewheel: {
+    invert: false,
+  },
+  keyboard: {
+    enabled: true,
+    onlyInViewport: true,
+    pageUpDown: true,
+  },
+  breakpoints: {
+    320: {
+      // slidesPerGroup: 1,
+      slidesPerView: 2,
+    },
+    768: {
+      // slidesPerGroup: 2,
+      slidesPerView: 3,
+    },
+    1440: {
+      // slidesPerGroup: 4,
+      slidesPerView: 6,
+    },
+  },
+  loop: true,
+  spaceBetween: 16,
+};
+
+export function getSwiper(params = {}) {
+  const mergedParams = { ...parameters, ...params };
+  new Swiper('.swiper', mergedParams);
 }
+
+// ================ / call in your file example / ================
+
+// import { getSwiper } from './swiper';
+
+// const btnNext = document.querySelector('.swiper-button-next-about');
+
+// const params = {
+//   loop: false,
+//   spaceBetween: 0,
+// };
+
+// getSwiper(params);
+
+// ================ / your html example / ================
+
 // <!-- Slider main container -->
 // <div class="swiper">
 //   <!-- Additional required wrapper -->
@@ -16,13 +66,6 @@ export function getSwiper(params) {
 //     <div class="swiper-slide">Slide 3</div>
 //     ...
 //   </div>
-//   <!-- If we need pagination -->
-//   <div class="swiper-pagination"></div>
-
-//   <!-- If we need navigation buttons -->
-//   <div class="swiper-button-prev"></div>
-//   <div class="swiper-button-next"></div>
-
-//   <!-- If we need scrollbar -->
-//   <div class="swiper-scrollbar"></div>
-// </div>
+//  <button class="swiper-button-next">
+//  <button class="swiper-button-prew">
+//  </button>;
